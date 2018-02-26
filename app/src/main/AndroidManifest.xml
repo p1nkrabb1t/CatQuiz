@@ -9,19 +9,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".StartActivity">
+        <activity android:name=".StartActivity"
+            android:windowSoftInputMode="stateHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivityE2" />
-        <activity android:name=".MainActivityM1" />
-        <activity android:name=".MainActivityM2" />
-        <activity android:name=".MainActivityH1" />
-        <activity android:name=".MainActivityH2" />
-        <activity android:name=".MainActivityE1" />
+        <activity android:name=".MainActivityE1"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".MainActivityE2"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".MainActivityM1"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".MainActivityM2"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".MainActivityH1"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".MainActivityH2"
+            android:windowSoftInputMode="stateHidden" />
         <activity android:name=".ScoreActivity"></activity>
     </application>
 
