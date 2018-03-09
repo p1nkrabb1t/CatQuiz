@@ -3,8 +3,10 @@
     <string name="app_name">Cat Quiz</string>
     <string name="name">Name</string>
     <string name="select_all_checkboxes">(You must select all correct answers to win the point.)</string>
+    <string name="type_answer">(Type your answer into the text box)</string>
     <string name="a_true">True</string>
     <string name="a_false">False</string>
+
 
     <!--Toast messages-->
     <string name="choose_difficulty_toast">Please choose a difficulty setting</string>
@@ -86,6 +88,26 @@
     <string name="hearing">Hearing</string>
     <string name="taste_for_sweet_foods">Taste for sweet foods</string>
     <string name="question_E5">Cats have retractable claws:</string>
+    <string name="question_M1">Which of these are types of cat?</string>
+    <string name="bengal">Bengal</string>
+    <string name="chinese_longhair">Chinese Longhair</string>
+    <string name="ragdoll">Ragdoll</string>
+    <string name="russian_blue">Russian Blue</string>
+    <string name="danish_white">Danish White</string>
+    <string name="question_M2">Some cats do have thumbs</string>
+    <string name="question_M3">What might a female cat be known as?</string>
+    <string name="duchess">Duchess</string>
+    <string name="queen">Queen</string>
+    <string name="princess">Princess</string>
+    <string name="empress">Empress</string>
+    <string name="question_M4">Can cats taste sweet things?</string>
+    <string name="yes_no">Yes/No</string>
+    <string name="question_M5">How much of their lives do cats typically sleep?</string>
+    <string name="_30">30%</string>
+    <string name="_50">50%</string>
+    <string name="_70">70%</string>
+
+
 
     <!--Questions & Answers text- Medium Mode-->
 

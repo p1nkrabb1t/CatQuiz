@@ -19,17 +19,17 @@ public class MainActivityM1 extends AppCompatActivity {
     int questions = 0;
     int score = 0;
     int levelPointsAwarded = 1;
-    int scoreQuestionE1 = 0;
-    int scoreQuestionE2 = 0;
-    int scoreQuestionE3 = 0;
-    int scoreQuestionE4 = 0;
-    int scoreQuestionE5 = 0;
+    int scoreQuestion1 = 0;
+    int scoreQuestion2 = 0;
+    int scoreQuestion3 = 0;
+    int scoreQuestion4 = 0;
+    int scoreQuestion5 = 0;
     String resultsList;
-    boolean answeredE1 = false;
-    boolean answeredE2 = false;
-    boolean answeredE3 = false;
-    boolean answeredE4 = false;
-    boolean answeredE5 = false;
+    boolean answered1 = false;
+    boolean answered2 = false;
+    boolean answered3 = false;
+    boolean answered4 = false;
+    boolean answered5 = false;
 
 
     @Override
@@ -46,15 +46,16 @@ public class MainActivityM1 extends AppCompatActivity {
     /**
      * This method is called when the Next / Submit button is clicked.
      */
-    public void submitE_A(View view) {
-        String qE1 = onRadioButtonClickedE1();
-        String qE2 = checkNumberE2();
-        String qE3 = onRadioButtonClickedE3();
-        String qE4 = getCheckedStateE4();
-        String qE5 = onRadioButtonClickedE5();
+    public void submit(View view) {
+        String q1 = getCheckedStateM1();
+        String q2 = onRadioButtonClickedM2();
+        String q3 = onRadioButtonClickedM3();
+        String q4 = checkEntryM4();
+        String q5 = onRadioButtonClickedM5();
+
         getScore();
-        resultsList = createScoreSummary(qE1, qE2, qE3, qE4, qE5);
-        if (answeredE1 && answeredE2 && answeredE3 && answeredE4 && answeredE5) {
+        resultsList = createScoreSummary(q1, q2, q3, q4, q5);
+        if (answered1 && answered2 && answered3 && answered4 && answered5) {
             nextPage();
         } else {
             Toast.makeText(this, R.string.toast_answer_all_questions, Toast.LENGTH_LONG).show();
@@ -82,7 +83,7 @@ public class MainActivityM1 extends AppCompatActivity {
      * This method changes the button text according to whether there are more questions or not.
      */
     public void chooseButton() {
-        Button buttonText = findViewById(R.id.submitE_A);
+        Button buttonText = findViewById(R.id.submit);
         if (questions == 5) {
             buttonText.setText(R.string.submit_button);
         } else {
@@ -93,148 +94,151 @@ public class MainActivityM1 extends AppCompatActivity {
     /**
      * This method works out the total score for this set of questions.
      * method was added as if using score = score + 1, a bug was found where if the user goes back and changes answers, new scores were added on top.
-     * this way should only allow max of 5 points to be sent to next activity
+     * this way the app should only allow max of 5 points to be sent to the next activity
      */
     public void getScore() {
-        score = scoreQuestionE1 + scoreQuestionE2 + scoreQuestionE3 + scoreQuestionE4 + scoreQuestionE5;
+        score = scoreQuestion1 + scoreQuestion2 + scoreQuestion3 + scoreQuestion4 + scoreQuestion5;
     }
 
+
     /**
-     * This method takes the users selection for question 1 (Easy) and returns points for a correct answer
+     * This method checks first that at least one box is checked for question 1 (Medium)
+     * takes multiple user selections and returns points only if ALL of the correct answers are selected
      */
-    public String onRadioButtonClickedE1() {
-        String qE1 = "";
-        RadioGroup questionE1 = findViewById(R.id.question_E1);
-        int id = questionE1.getCheckedRadioButtonId();
-        switch (id) {
-            case R.id.qE1_1:
-                qE1 = getString(R.string.incorrect);
-                scoreQuestionE1 = 0;
-                answeredE1 = true;
-                break;
-            case R.id.qE1_2:
-                scoreQuestionE1 = levelPointsAwarded;
-                qE1 = getString(R.string.correct);
-                answeredE1 = true;
-                break;
-            case R.id.qE1_3:
-                qE1 = getString(R.string.incorrect);
-                scoreQuestionE1 = 0;
-                answeredE1 = true;
-                break;
-            case R.id.qE1_4:
-                qE1 = getString(R.string.incorrect);
-                scoreQuestionE1 = 0;
-                answeredE1 = true;
-                break;
+    private String getCheckedStateM1() {
+        String q1 = "";
+        CheckBox q11 = findViewById(R.id.qM1_1);
+        CheckBox q12 = findViewById(R.id.qM1_2);
+        CheckBox q13 = findViewById(R.id.qM1_3);
+        CheckBox q14 = findViewById(R.id.qM1_4);
+        CheckBox q15 = findViewById(R.id.qM1_5);
+        boolean ans1_1 = q11.isChecked();
+        boolean ans1_2 = q12.isChecked();
+        boolean ans1_3 = q13.isChecked();
+        boolean ans1_4 = q14.isChecked();
+        boolean ans1_5 = q15.isChecked();
+
+        if (!ans1_1 && !ans1_2 && !ans1_3 && !ans1_4 && !ans1_5) {
+            return q1;
         }
-        return qE1;
-    }
-
-    /**
-     * This method takes the users number input for question 2 and returns points for a correct answer
-     */
-    public String checkNumberE2() {
-        String qE2 = "";
-        EditText livesQuestion = findViewById(R.id.question_E2);
-        if (livesQuestion.getText().toString().equals(null) || livesQuestion.getText().toString().equals("")) {
-            qE2 = "";
-            return qE2;
+        if (ans1_1 && ans1_2 && !ans1_3 && ans1_4 && !ans1_5) {
+            scoreQuestion1 = levelPointsAwarded;
+            q1 = getString(R.string.correct);
+            answered1 = true;
         } else {
-            int lives = Integer.parseInt(livesQuestion.getText().toString());
-            if (lives == 9) {
-                scoreQuestionE2 = levelPointsAwarded;
-                qE2 = getString(R.string.correct);
-                answeredE2 = true;
-            } else {
-                qE2 = getString(R.string.incorrect);
-                scoreQuestionE2 = 0;
-                answeredE2 = true;
-            }
+            q1 = getString(R.string.incorrect);
+            scoreQuestion1 = 0;
+            answered1 = true;
         }
-        return qE2;
+        return q1;
+    }
+
+    /**
+     * This method takes the users selection for question 2 (Medium) and returns points for a correct answer
+     */
+    public String onRadioButtonClickedM2() {
+        String q2 = "";
+        RadioGroup question2 = findViewById(R.id.question_M2);
+        int id = question2.getCheckedRadioButtonId();
+        switch (id) {
+            case R.id.qM2_1:
+                scoreQuestion2 = levelPointsAwarded;
+                q2 = getString(R.string.correct);
+                answered2 = true;
+                break;
+            case R.id.qM2_2:
+                q2 = getString(R.string.incorrect);
+                scoreQuestion2 = 0;
+                answered2 = true;
+                break;
+        }
+        return q2;
+    }
+
+    /**
+     * This method takes the users selection for question 3 (Medium) and returns points for a correct answer
+     */
+    public String onRadioButtonClickedM3() {
+        String q3 = "";
+        RadioGroup question3 = findViewById(R.id.question_M3);
+        int id = question3.getCheckedRadioButtonId();
+        switch (id) {
+            case R.id.qM3_1:
+                q3 = getString(R.string.incorrect);
+                scoreQuestion3 = 0;
+                answered3 = true;
+                break;
+            case R.id.qM3_2:
+                scoreQuestion3 = levelPointsAwarded;
+                q3 = getString(R.string.correct);
+                answered3 = true;
+                break;
+            case R.id.qM3_3:
+                q3 = getString(R.string.incorrect);
+                scoreQuestion3 = 0;
+                answered3 = true;
+                break;
+            case R.id.qM3_4:
+                q3 = getString(R.string.incorrect);
+                scoreQuestion3 = 0;
+                answered3 = true;
+                break;
+        }
+        return q3;
+    }
+
+    /**
+     * This method takes the users number input for question 4 and returns points for a correct answer
+     */
+    public String checkEntryM4() {
+        String q4 = "";
+        EditText question4 = findViewById(R.id.question_M4);
+        if (question4.getText().toString().equals(null) || question4.getText().toString().equals("")) {
+            q4 = "";
+            return q4;
+        } else
+            if (question4.getText().toString().equals("no") || question4.getText().toString().equals("No")) {
+                scoreQuestion4 = levelPointsAwarded;
+                q4 = getString(R.string.correct);
+                answered4 = true;
+            } else {
+                q4 = getString(R.string.incorrect);
+                scoreQuestion4 = 0;
+                answered4 = true;
+            }
+        return q4;
     }
 
     /**
      * This method takes the users selection for question 3 (Easy) and returns points for a correct answer
      */
-    public String onRadioButtonClickedE3() {
-        String qE3 = "";
-        RadioGroup questionE3 = findViewById(R.id.question_E3);
+    public String onRadioButtonClickedM5() {
+        String q5 = "";
+        RadioGroup questionE3 = findViewById(R.id.question_M5);
         int id = questionE3.getCheckedRadioButtonId();
         switch (id) {
-            case R.id.qE3_1:
-                qE3 = getString(R.string.incorrect);
-                scoreQuestionE3 = 0;
-                answeredE3 = true;
+            case R.id.qM5_1:
+                q5 = getString(R.string.incorrect);
+                scoreQuestion5 = 0;
+                answered5 = true;
                 break;
-            case R.id.qE3_2:
-                qE3 = getString(R.string.incorrect);
-                scoreQuestionE3 = 0;
-                answeredE3 = true;
+            case R.id.qM5_2:
+                q5 = getString(R.string.incorrect);
+                scoreQuestion5 = 0;
+                answered5 = true;
                 break;
-            case R.id.qE3_3:
-                scoreQuestionE3 = levelPointsAwarded;
-                qE3 = getString(R.string.correct);
-                answeredE3 = true;
+            case R.id.qM5_3:
+                q5 = getString(R.string.correct);
+                scoreQuestion5 = levelPointsAwarded;
+                answered5 = true;
                 break;
         }
-        return qE3;
+        return q5;
     }
 
-    /**
-     * This method checks first that at least one box is checked for question 4 (Easy)
-     * takes multiple user selections and returns points only if ALL of the correct answers are selected
-     */
-    private String getCheckedStateE4() {
-        String qE4 = "";
-        CheckBox qE41 = findViewById(R.id.qE4_1);
-        CheckBox qE42 = findViewById(R.id.qE4_2);
-        CheckBox qE43 = findViewById(R.id.qE4_3);
-        CheckBox qE44 = findViewById(R.id.qE4_4);
-        CheckBox qE45 = findViewById(R.id.qE4_5);
-        boolean easy4_1 = qE41.isChecked();
-        boolean easy4_2 = qE42.isChecked();
-        boolean easy4_3 = qE43.isChecked();
-        boolean easy4_4 = qE44.isChecked();
-        boolean easy4_5 = qE45.isChecked();
 
-        if (!easy4_1 && !easy4_2 && !easy4_3 && !easy4_4 && !easy4_5) {
-            return qE4;
-        }
-        if (easy4_1 && easy4_2 && !easy4_3 && easy4_4 && !easy4_5) {
-            scoreQuestionE4 = levelPointsAwarded;
-            qE4 = getString(R.string.correct);
-            answeredE4 = true;
-        } else {
-            qE4 = getString(R.string.incorrect);
-            scoreQuestionE4 = 0;
-            answeredE4 = true;
-        }
-        return qE4;
-    }
 
-    /**
-     * This method takes the users selection for question 5 (Easy) and returns points for a correct answer
-     */
-    public String onRadioButtonClickedE5() {
-        String qE5 = "";
-        RadioGroup questionE5 = findViewById(R.id.question_E5);
-        int id = questionE5.getCheckedRadioButtonId();
-        switch (id) {
-            case R.id.qE5_1:
-                scoreQuestionE5 = levelPointsAwarded;
-                qE5 = getString(R.string.correct);
-                answeredE5 = true;
-                break;
-            case R.id.qE5_2:
-                qE5 = getString(R.string.incorrect);
-                scoreQuestionE5 = 0;
-                answeredE5 = true;
-                break;
-        }
-        return qE5;
-    }
+
 
 
     /**
@@ -250,7 +254,7 @@ public class MainActivityM1 extends AppCompatActivity {
             Toast.makeText(this, "You have scored " + score + " out of " + questions, Toast.LENGTH_LONG).show();
             startActivity(intent);
         } else {
-            Intent intent = new Intent(this, MainActivityE2.class);
+            Intent intent = new Intent(this, MainActivityM2.class);
             intent.putExtra("name", name);
             intent.putExtra("score", score);
             intent.putExtra("questions", questions);
@@ -263,13 +267,13 @@ public class MainActivityM1 extends AppCompatActivity {
     /**
      * This method creates a summary of which questions were answered right or wrong
      */
-    private String createScoreSummary(String qE1, String qE2, String qE3, String qE4, String qE5) {
+    private String createScoreSummary(String q1, String q2, String q3, String q4, String q5) {
         resultsList = getString(R.string.results_message);
-        resultsList += "\n" + getString(R.string.results_Q1) + qE1;
-        resultsList += "\n" + getString(R.string.results_Q2) + qE2;
-        resultsList += "\n" + getString(R.string.results_Q3) + qE3;
-        resultsList += "\n" + getString(R.string.results_Q4) + qE4;
-        resultsList += "\n" + getString(R.string.results_Q5) + qE5;
+        resultsList += "\n" + getString(R.string.results_Q1) + q1;
+        resultsList += "\n" + getString(R.string.results_Q2) + q2;
+        resultsList += "\n" + getString(R.string.results_Q3) + q3;
+        resultsList += "\n" + getString(R.string.results_Q4) + q4;
+        resultsList += "\n" + getString(R.string.results_Q5) + q5;
         return resultsList;
 
     }
