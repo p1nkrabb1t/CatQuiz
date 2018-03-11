@@ -29,7 +29,7 @@
             android:background="@color/hot_pink"
             android:gravity="center_horizontal"
             android:padding="8dp"
-            android:text="@string/displayMessage"
+            android:text="score related message here"
             android:textAllCaps="true"
             android:textColor="@color/black"
             android:textSize="16sp" />
@@ -50,7 +50,7 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginBottom="8dp"
                 android:layout_marginTop="8dp"
-                android:text="Player Name"
+                android:text="player name here"
                 android:textAllCaps="true"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
@@ -97,7 +97,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="24dp"
                 android:layout_marginTop="8dp"
-                android:text="results"
+                android:text="results list here"
                 android:textAllCaps="false"
                 android:textSize="16sp" />
 

@@ -6,6 +6,7 @@
     <string name="type_answer">(Type your answer into the text box)</string>
     <string name="a_true">True</string>
     <string name="a_false">False</string>
+    <string name="yes_no">Yes/No</string>
 
 
     <!--Toast messages-->
@@ -88,7 +89,9 @@
     <string name="hearing">Hearing</string>
     <string name="taste_for_sweet_foods">Taste for sweet foods</string>
     <string name="question_E5">Cats have retractable claws:</string>
-    <string name="question_M1">Which of these are types of cat?</string>
+
+    <!--Questions & Answers text- Medium Mode-->
+    <string name="question_M1">Which of these are breeds of cat?</string>
     <string name="bengal">Bengal</string>
     <string name="chinese_longhair">Chinese Longhair</string>
     <string name="ragdoll">Ragdoll</string>
@@ -101,12 +104,24 @@
     <string name="princess">Princess</string>
     <string name="empress">Empress</string>
     <string name="question_M4">Can cats taste sweet things?</string>
-    <string name="yes_no">Yes/No</string>
     <string name="question_M5">How much of their lives do cats typically sleep?</string>
     <string name="_30">30%</string>
     <string name="_50">50%</string>
     <string name="_70">70%</string>
-
+    <string name="question_M7">Name a domestic cat breed with no tail?</string>
+    <string name="question_M8">Should cats be given milk?</string>
+    <string name="ans8_1">Yes, milk is good for cats</string>
+    <string name="ans8_2">Yes, but only full fat milk.</string>
+    <string name="ans8_3">No, cats are lactose intolerant</string>
+    <string name="ans8_4">No, milk is poisonous to cats</string>
+    <string name="question_M9">Which of these are poisonous to cats?</string>
+    <string name="chocolate">Chocolate</string>
+    <string name="garlic">Garlic</string>
+    <string name="roses">Roses</string>
+    <string name="lilies">Lilies</string>
+    <string name="banana">Banana</string>
+    <string name="question_M10">Cats sweat only through their paws</string>
+    <string name="cat_breed">Cat Breed</string>
 
 
     <!--Questions & Answers text- Medium Mode-->

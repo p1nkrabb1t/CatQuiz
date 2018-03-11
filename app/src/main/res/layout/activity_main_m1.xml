@@ -280,7 +280,7 @@
                 android:layout_marginTop="8dp"
                 android:background="#f7eff4"
                 android:hint="@string/yes_no"
-                android:inputType="text"
+                android:inputType="textCapWords"
                 android:maxLength="6"
                 android:padding="10dp" />
 

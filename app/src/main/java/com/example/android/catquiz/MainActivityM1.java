@@ -197,7 +197,7 @@ public class MainActivityM1 extends AppCompatActivity {
             q4 = "";
             return q4;
         } else
-            if (question4.getText().toString().equals("no") || question4.getText().toString().equals("No")) {
+            if (question4.getText().toString().equals("No")) {
                 scoreQuestion4 = levelPointsAwarded;
                 q4 = getString(R.string.correct);
                 answered4 = true;
