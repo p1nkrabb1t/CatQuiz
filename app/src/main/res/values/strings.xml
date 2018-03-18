@@ -3,6 +3,7 @@
     <string name="app_name">Cat Quiz</string>
     <string name="name">Name</string>
     <string name="select_all_checkboxes">(You must select all correct answers to win the point.)</string>
+    <string name="select_all_true_statements">Select all of the statements that are true..</string>
     <string name="type_answer">(Type your answer into the text box)</string>
     <string name="a_true">True</string>
     <string name="a_false">False</string>
@@ -123,9 +124,28 @@
     <string name="question_M10">Cats sweat only through their paws</string>
     <string name="cat_breed">Cat Breed</string>
 
-
-    <!--Questions & Answers text- Medium Mode-->
-
+    <!--Questions & Answers text- Hard Mode-->
+    <string name="ansH1_1">A cat\'s paw print is unique like our finger prints.</string>
+    <string name="ansH1_2">A cat\'s nose print is unique like our finger prints.</string>
+    <string name="ansH1_3">The cat flap was invented by Sir Isaac Newton.</string>
+    <string name="ansH1_4">Cats can see in three times the colour range that humans can.</string>
+    <string name="ansH1_5">Cats have been used for mail delivery.</string>
+    <string name="ansH1_6">Cats have around 40 different vocalisations.</string>
+    <string name="question_H2">A cat\'s jaw can\'t move sideways..</string>
+    <string name="question_H3">What do you call a group of cats?</string>
+    <string name="pack">Pack</string>
+    <string name="troop">Troop</string>
+    <string name="cast">Cast</string>
+    <string name="colony">Colony</string>
+    <string name="clowder">Clowder</string>
+    <string name="covey">Covey</string>
+    <string name="question_H4">How many colours does the Calico coat have?</string>
+    <string name="question_H5">Adult cats \'Meow\' to get the attention of..</string>
+    <string name="ansH5_1">Only other cats</string>
+    <string name="ansH5_2">Only humans</string>
+    <string name="ansH5_3">Other cats and humans</string>
+    <string name="ansH5_4">All other animals/cats/humans</string>
+    <string name="question_H7">How old did the world\'s oldest ever domestic cat live to be?</string>
 
 
 

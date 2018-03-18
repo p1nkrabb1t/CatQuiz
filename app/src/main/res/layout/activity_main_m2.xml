@@ -14,7 +14,7 @@
 
 
         <ImageView
-            android:id="@+id/banner_E1"
+            android:id="@+id/banner_M2"
             android:layout_width="wrap_content"
             android:layout_height="124dp"
             android:scaleType="centerCrop"

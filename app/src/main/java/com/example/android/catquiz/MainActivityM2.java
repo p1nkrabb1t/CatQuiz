@@ -48,7 +48,7 @@ public class MainActivityM2 extends AppCompatActivity {
      */
     public void submit(View view) {
         String q6 = onRadioButtonClickedM6();
-        String q7 = checkNumberM7();
+        String q7 = checkEntryM7();
         String q8 = onRadioButtonClickedM8();
         String q9 = getCheckedStateM9();
         String q10 = onRadioButtonClickedM10();
@@ -135,7 +135,7 @@ public class MainActivityM2 extends AppCompatActivity {
     /**
      * This method takes the users number input for question 7 and returns points for a correct answer
      */
-    public String checkNumberM7() {
+    public String checkEntryM7() {
         String q7 = "";
         EditText question7 = findViewById(R.id.question_M7);
         if (question7.getText().toString().equals(null) || question7.getText().toString().equals("")) {
