@@ -119,6 +119,7 @@ public class MainActivityM1 extends AppCompatActivity {
         boolean ans1_5 = q15.isChecked();
 
         if (!ans1_1 && !ans1_2 && !ans1_3 && !ans1_4 && !ans1_5) {
+            answered1 = false;
             return q1;
         }
         if (ans1_1 && ans1_2 && !ans1_3 && ans1_4 && !ans1_5) {
@@ -195,17 +196,17 @@ public class MainActivityM1 extends AppCompatActivity {
         EditText question4 = findViewById(R.id.question_M4);
         if (question4.getText().toString().equals(null) || question4.getText().toString().equals("")) {
             q4 = "";
+            answered4 = false;
             return q4;
-        } else
-            if (question4.getText().toString().equals("No")) {
-                scoreQuestion4 = levelPointsAwarded;
-                q4 = getString(R.string.correct);
-                answered4 = true;
-            } else {
-                q4 = getString(R.string.incorrect);
-                scoreQuestion4 = 0;
-                answered4 = true;
-            }
+        } else if (question4.getText().toString().equals("No")) {
+            scoreQuestion4 = levelPointsAwarded;
+            q4 = getString(R.string.correct);
+            answered4 = true;
+        } else {
+            q4 = getString(R.string.incorrect);
+            scoreQuestion4 = 0;
+            answered4 = true;
+        }
         return q4;
     }
 
@@ -235,10 +236,6 @@ public class MainActivityM1 extends AppCompatActivity {
         }
         return q5;
     }
-
-
-
-
 
 
     /**

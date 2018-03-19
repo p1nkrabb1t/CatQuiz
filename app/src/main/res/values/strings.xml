@@ -145,9 +145,25 @@
     <string name="ansH5_2">Only humans</string>
     <string name="ansH5_3">Other cats and humans</string>
     <string name="ansH5_4">All other animals/cats/humans</string>
+
+    <string name="question_H6">What is \'allogrooming' in cats?</string>
+    <string name="ansH6_1">When cats groom too much through stress</string>
+    <string name="ansH6_2">When cats groom each other</string>
+    <string name="ansH6_3">When a cat asserts authority over another cat</string>
+    <string name="ansH6_4">When a cat hasn\'t learned how to groom properly</string>
     <string name="question_H7">How old did the world\'s oldest ever domestic cat live to be?</string>
-
-
+    <string name="question_H8">How many toes in total do cats usually have?</string>
+    <string name="ansH8_1">16</string>
+    <string name="ansH8_2">18</string>
+    <string name="ansH8_3">20</string>
+    <string name="ansH8_4">22</string>
+    <string name="ansH8_5">24</string>
+    <string name="ansH9_1">All kittens are born deaf</string>
+    <string name="ansH9_2">When a cats tail is raised and vibrates at the tip, he/she is angry</string>
+    <string name="ansH9_3">Male cats are more likely to be left-pawed, and female cats are more likely to be right-pawed</string>
+    <string name="ansH9_4">Cats cannot climb down trees head first</string>
+    <string name="ansH9_5">Female cats are more sensitive to catnip than males.</string>
+    <string name="question_H10">Cats have tiny barbs on their tongues called \'Melanocytes\'.</string>
 
 
 </resources>

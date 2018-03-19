@@ -140,14 +140,15 @@ public class MainActivityM2 extends AppCompatActivity {
         EditText question7 = findViewById(R.id.question_M7);
         if (question7.getText().toString().equals(null) || question7.getText().toString().equals("")) {
             q7 = "";
+            answered7 = false;
             return q7;
         } else {
             String answer = question7.getText().toString();
             if (answer.equals("Manx") || answer.equals("Manx Cat")
                     || answer.equals("Cymric") || answer.equals("Cymric Cat")
                     || answer.equals("Japanese Bobtail") || answer.equals("American Bobtail")
-                    || answer.equals("Kurilian Bobtail")|| answer.equals("Pixie Bob")
-                    || answer.equals("Highlander")|| answer.equals("Highlander Lynx")){
+                    || answer.equals("Kurilian Bobtail") || answer.equals("Pixie Bob")
+                    || answer.equals("Highlander") || answer.equals("Highlander Lynx")) {
                 scoreQuestion7 = levelPointsAwarded;
                 q7 = getString(R.string.correct);
                 answered7 = true;
@@ -210,6 +211,7 @@ public class MainActivityM2 extends AppCompatActivity {
         boolean ans_5 = q95.isChecked();
 
         if (!ans_1 && !ans_2 && !ans_3 && !ans_4 && !ans_5) {
+            answered9 = false;
             return q9;
         }
         if (ans_1 && ans_2 && !ans_3 && ans_4 && !ans_5) {
@@ -229,8 +231,8 @@ public class MainActivityM2 extends AppCompatActivity {
      */
     public String onRadioButtonClickedM10() {
         String q10 = "";
-        RadioGroup questionE5 = findViewById(R.id.question_M10);
-        int id = questionE5.getCheckedRadioButtonId();
+        RadioGroup question10 = findViewById(R.id.question_M10);
+        int id = question10.getCheckedRadioButtonId();
         switch (id) {
             case R.id.qM10_1:
                 scoreQuestion10 = levelPointsAwarded;
@@ -252,20 +254,21 @@ public class MainActivityM2 extends AppCompatActivity {
      */
     public void nextPage() {
         if (questions == 10) {
-        Intent intent = new Intent(this, ScoreActivity.class);
-        intent.putExtra("name", name);
-        intent.putExtra("score", score);
-        intent.putExtra("questions", questions);
-        intent.putExtra("resultsList", resultsList);
-        Toast.makeText(this, "You have scored " + score + " out of " + questions, Toast.LENGTH_LONG).show();
-        startActivity(intent);
-        } else {
-            Intent intent = new Intent(this, MainActivityE2.class);
+            Intent intent = new Intent(this, ScoreActivity.class);
             intent.putExtra("name", name);
             intent.putExtra("score", score);
             intent.putExtra("questions", questions);
+            intent.putExtra("resultsList", resultsList);
+            Toast.makeText(this, "You have scored " + score + " out of " + questions, Toast.LENGTH_LONG).show();
             startActivity(intent);
         }
+//            else {
+//                Intent intent = new Intent(this, MainActivityM3.class);
+//                intent.putExtra("name", name);
+//                intent.putExtra("score", score);
+//                intent.putExtra("questions", questions);
+//                startActivity(intent);
+//            }
     }
 
 

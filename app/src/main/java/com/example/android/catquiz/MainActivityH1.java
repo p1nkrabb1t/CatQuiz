@@ -121,9 +121,10 @@ public class MainActivityH1 extends AppCompatActivity {
         boolean ans1_6 = q16.isChecked();
 
         if (!ans1_1 && !ans1_2 && !ans1_3 && !ans1_4 && !ans1_5 && !ans1_6) {
+            answered1 = false;
             return q1;
         }
-        if (!ans1_1 && ans1_2 && ans1_3 && !ans1_4 && ans1_5 && !ans1_5) {
+        if (!ans1_1 && ans1_2 && ans1_3 && !ans1_4 && ans1_5 && !ans1_6) {
             scoreQuestion1 = levelPointsAwarded;
             q1 = getString(R.string.correct);
             answered1 = true;
@@ -207,6 +208,7 @@ public class MainActivityH1 extends AppCompatActivity {
         EditText question4 = findViewById(R.id.question_H4);
         if (question4.getText().toString().equals(null) || question4.getText().toString().equals("")) {
             q4 = "";
+            answered4 = false;
             return q4;
         } else {
             int colours = Integer.parseInt(question4.getText().toString());
@@ -254,10 +256,6 @@ public class MainActivityH1 extends AppCompatActivity {
         }
         return q5;
     }
-
-
-
-
 
 
     /**

@@ -56,50 +56,50 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:layout_marginTop="8dp"
-                android:text="Are tortoiseshell cats usually male or female?"
+                android:text="@string/question_H6"
                 android:textAllCaps="false"
                 android:textColor="@color/black"
                 android:textSize="16sp" />
 
             <RadioGroup
-                android:id="@+id/question_M6"
+                android:id="@+id/question_H6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
                 <RadioButton
-                    android:id="@+id/qM6_1"
+                    android:id="@+id/qH6_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="16dp"
                     android:paddingLeft="24dp"
-                    android:text="Almost always male"
+                    android:text="@string/ansH6_1"
                     android:textSize="16sp" />
 
                 <RadioButton
-                    android:id="@+id/qM6_2"
+                    android:id="@+id/qH6_2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="16dp"
                     android:paddingLeft="24dp"
-                    android:text="Almost always female"
+                    android:text="@string/ansH6_2"
                     android:textSize="16sp" />
 
                 <RadioButton
-                    android:id="@+id/qM6_3"
+                    android:id="@+id/qH6_3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="16dp"
                     android:paddingLeft="24dp"
-                    android:text="Slightly higher chance of being male"
+                    android:text="@string/ansH6_3"
                     android:textSize="16sp" />
 
                 <RadioButton
-                    android:id="@+id/qM6_4"
+                    android:id="@+id/qH6_4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="16dp"
                     android:paddingLeft="24dp"
-                    android:text="Equal chance of being male or female"
+                    android:text="@string/ansH6_4"
                     android:textSize="16sp" />
             </RadioGroup>
         </LinearLayout>
@@ -169,50 +169,59 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:layout_marginTop="8dp"
-                android:text="@string/question_M8"
+                android:text="@string/question_H8"
                 android:textAllCaps="false"
                 android:textColor="@color/black"
                 android:textSize="16sp" />
 
             <RadioGroup
-                android:id="@+id/question_M8"
+                android:id="@+id/question_H8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
                 <RadioButton
-                    android:id="@+id/qM8_1"
+                    android:id="@+id/qH8_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="16dp"
                     android:paddingLeft="24dp"
-                    android:text="@string/ans8_1"
+                    android:text="@string/ansH8_1"
                     android:textSize="16sp" />
 
                 <RadioButton
-                    android:id="@+id/qM8_2"
+                    android:id="@+id/qH8_2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="16dp"
                     android:paddingLeft="24dp"
-                    android:text="@string/ans8_2"
+                    android:text="@string/ansH8_2"
                     android:textSize="16sp" />
 
                 <RadioButton
-                    android:id="@+id/qM8_3"
+                    android:id="@+id/qH8_3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="16dp"
                     android:paddingLeft="24dp"
-                    android:text="@string/ans8_3"
+                    android:text="@string/ansH8_3"
                     android:textSize="16sp" />
 
                 <RadioButton
-                    android:id="@+id/qM8_4"
+                    android:id="@+id/qH8_4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="16dp"
                     android:paddingLeft="24dp"
-                    android:text="@string/ans8_4"
+                    android:text="@string/ansH8_4"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/qH8_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:paddingLeft="24dp"
+                    android:text="@string/ansH8_5"
                     android:textSize="16sp" />
 
             </RadioGroup>
@@ -241,7 +250,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="@string/question_M9"
+                android:text="@string/select_all_true_statements"
                 android:textAllCaps="false"
                 android:textColor="@color/black"
                 android:textSize="16sp" />
@@ -255,48 +264,48 @@
                 android:textSize="16sp" />
 
             <CheckBox
-                android:id="@+id/qM9_1"
+                android:id="@+id/qH9_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
                 android:paddingLeft="24dp"
-                android:text="@string/chocolate"
+                android:text="@string/ansH9_1"
                 android:textSize="16sp" />
 
             <CheckBox
-                android:id="@+id/qM9_2"
+                android:id="@+id/qH9_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
                 android:paddingLeft="24dp"
-                android:text="@string/garlic"
+                android:text="@string/ansH9_2"
                 android:textSize="16sp" />
 
             <CheckBox
-                android:id="@+id/qM9_3"
+                android:id="@+id/qH9_3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
                 android:paddingLeft="24dp"
-                android:text="@string/roses"
+                android:text="@string/ansH9_3"
                 android:textSize="16sp" />
 
             <CheckBox
-                android:id="@+id/qM9_4"
+                android:id="@+id/qH9_4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
                 android:paddingLeft="24dp"
-                android:text="@string/lilies"
+                android:text="@string/ansH9_4"
                 android:textSize="16sp" />
 
             <CheckBox
-                android:id="@+id/qM9_5"
+                android:id="@+id/qH9_5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
                 android:paddingLeft="24dp"
-                android:text="@string/banana"
+                android:text="@string/ansH9_5"
                 android:textSize="16sp" />
         </LinearLayout>
 
@@ -322,18 +331,18 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:layout_marginTop="8dp"
-                android:text="@string/question_M10"
+                android:text="@string/question_H10"
                 android:textAllCaps="false"
                 android:textColor="@color/black"
                 android:textSize="16sp" />
 
             <RadioGroup
-                android:id="@+id/question_M10"
+                android:id="@+id/question_H10"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
                 <RadioButton
-                    android:id="@+id/qM10_1"
+                    android:id="@+id/qH10_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="16dp"
@@ -342,7 +351,7 @@
                     android:textSize="16sp" />
 
                 <RadioButton
-                    android:id="@+id/qM10_2"
+                    android:id="@+id/qH10_2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="16dp"

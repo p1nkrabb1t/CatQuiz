@@ -47,11 +47,11 @@ public class MainActivityH2 extends AppCompatActivity {
      * This method is called when the Next / Submit button is clicked.
      */
     public void submit(View view) {
-        String q6 = onRadioButtonClickedM6();
+        String q6 = onRadioButtonClickedH6();
         String q7 = checkEntryH7();
-        String q8 = onRadioButtonClickedM8();
-        String q9 = getCheckedStateM9();
-        String q10 = onRadioButtonClickedM10();
+        String q8 = onRadioButtonClickedH8();
+        String q9 = getCheckedStateH9();
+        String q10 = onRadioButtonClickedH10();
         getScore();
         resultsList = createScoreSummary(q6, q7, q8, q9, q10);
         if (answered6 && answered7 && answered8 && answered9 && answered10) {
@@ -101,29 +101,29 @@ public class MainActivityH2 extends AppCompatActivity {
     }
 
     /**
-     * This method takes the users selection for question 6 (Medium) and returns points for a correct answer
+     * This method takes the users selection for question 6 and returns points for a correct answer
      */
-    public String onRadioButtonClickedM6() {
+    public String onRadioButtonClickedH6() {
         String q6 = "";
-        RadioGroup questionM6 = findViewById(R.id.question_M6);
-        int id = questionM6.getCheckedRadioButtonId();
+        RadioGroup questionH6 = findViewById(R.id.question_H6);
+        int id = questionH6.getCheckedRadioButtonId();
         switch (id) {
-            case R.id.qM6_1:
+            case R.id.qH6_1:
                 q6 = getString(R.string.incorrect);
                 scoreQuestion6 = 0;
                 answered6 = true;
                 break;
-            case R.id.qM6_2:
+            case R.id.qH6_2:
                 scoreQuestion6 = levelPointsAwarded;
                 q6 = getString(R.string.correct);
                 answered6 = true;
                 break;
-            case R.id.qM6_3:
+            case R.id.qH6_3:
                 q6 = getString(R.string.incorrect);
                 scoreQuestion6 = 0;
                 answered6 = true;
                 break;
-            case R.id.qM6_4:
+            case R.id.qH6_4:
                 q6 = getString(R.string.incorrect);
                 scoreQuestion6 = 0;
                 answered6 = true;
@@ -140,6 +140,7 @@ public class MainActivityH2 extends AppCompatActivity {
         EditText question7 = findViewById(R.id.question_H7);
         if (question7.getText().toString().equals(null) || question7.getText().toString().equals("")) {
             q7 = "";
+            answered7 = false;
             return q7;
         } else {
             int age = Integer.parseInt(question7.getText().toString());
@@ -157,29 +158,34 @@ public class MainActivityH2 extends AppCompatActivity {
     }
 
     /**
-     * This method takes the users selection for question 8 (Medium) and returns points for a correct answer
+     * This method takes the users selection for question 8 and returns points for a correct answer
      */
-    public String onRadioButtonClickedM8() {
+    public String onRadioButtonClickedH8() {
         String q8 = "";
-        RadioGroup questionM8 = findViewById(R.id.question_M8);
-        int id = questionM8.getCheckedRadioButtonId();
+        RadioGroup questionH8 = findViewById(R.id.question_H8);
+        int id = questionH8.getCheckedRadioButtonId();
         switch (id) {
-            case R.id.qM8_1:
+            case R.id.qH8_1:
                 q8 = getString(R.string.incorrect);
                 scoreQuestion8 = 0;
                 answered8 = true;
                 break;
-            case R.id.qM8_2:
-                q8 = getString(R.string.incorrect);
-                scoreQuestion8 = 0;
-                answered8 = true;
-                break;
-            case R.id.qM8_3:
-                scoreQuestion8 = levelPointsAwarded;
+            case R.id.qH8_2:
                 q8 = getString(R.string.correct);
+                scoreQuestion8 = levelPointsAwarded;
                 answered8 = true;
                 break;
-            case R.id.qM8_4:
+            case R.id.qH8_3:
+                q8 = getString(R.string.incorrect);
+                scoreQuestion8 = 0;
+                answered8 = true;
+                break;
+            case R.id.qH8_4:
+                q8 = getString(R.string.incorrect);
+                scoreQuestion8 = 0;
+                answered8 = true;
+                break;
+            case R.id.qH8_5:
                 q8 = getString(R.string.incorrect);
                 scoreQuestion8 = 0;
                 answered8 = true;
@@ -189,16 +195,16 @@ public class MainActivityH2 extends AppCompatActivity {
     }
 
     /**
-     * This method checks first that at least one box is checked for question 9 (Medium)
+     * This method checks first that at least one box is checked for question 9
      * takes multiple user selections and returns points only if ALL of the correct answers are selected
      */
-    private String getCheckedStateM9() {
+    private String getCheckedStateH9() {
         String q9 = "";
-        CheckBox q91 = findViewById(R.id.qM9_1);
-        CheckBox q92 = findViewById(R.id.qM9_2);
-        CheckBox q93 = findViewById(R.id.qM9_3);
-        CheckBox q94 = findViewById(R.id.qM9_4);
-        CheckBox q95 = findViewById(R.id.qM9_5);
+        CheckBox q91 = findViewById(R.id.qH9_1);
+        CheckBox q92 = findViewById(R.id.qH9_2);
+        CheckBox q93 = findViewById(R.id.qH9_3);
+        CheckBox q94 = findViewById(R.id.qH9_4);
+        CheckBox q95 = findViewById(R.id.qH9_5);
         boolean ans_1 = q91.isChecked();
         boolean ans_2 = q92.isChecked();
         boolean ans_3 = q93.isChecked();
@@ -206,9 +212,10 @@ public class MainActivityH2 extends AppCompatActivity {
         boolean ans_5 = q95.isChecked();
 
         if (!ans_1 && !ans_2 && !ans_3 && !ans_4 && !ans_5) {
+            answered9 = false;
             return q9;
         }
-        if (ans_1 && ans_2 && !ans_3 && ans_4 && !ans_5) {
+        if (ans_1 && !ans_2 && ans_3 && ans_4 && !ans_5) {
             scoreQuestion9 = levelPointsAwarded;
             q9 = getString(R.string.correct);
             answered9 = true;
@@ -221,21 +228,21 @@ public class MainActivityH2 extends AppCompatActivity {
     }
 
     /**
-     * This method takes the users selection for question 10 (Medium) and returns points for a correct answer
+     * This method takes the users selection for question 10 and returns points for a correct answer
      */
-    public String onRadioButtonClickedM10() {
+    public String onRadioButtonClickedH10() {
         String q10 = "";
-        RadioGroup questionE5 = findViewById(R.id.question_M10);
-        int id = questionE5.getCheckedRadioButtonId();
+        RadioGroup question10 = findViewById(R.id.question_H10);
+        int id = question10.getCheckedRadioButtonId();
         switch (id) {
-            case R.id.qM10_1:
-                scoreQuestion10 = levelPointsAwarded;
-                q10 = getString(R.string.correct);
-                answered10 = true;
-                break;
-            case R.id.qM10_2:
+            case R.id.qH10_1:
                 q10 = getString(R.string.incorrect);
                 scoreQuestion10 = 0;
+                answered10 = true;
+                break;
+            case R.id.qH10_2:
+                q10 = getString(R.string.correct);
+                scoreQuestion10 = levelPointsAwarded;
                 answered10 = true;
                 break;
         }
@@ -255,13 +262,14 @@ public class MainActivityH2 extends AppCompatActivity {
             intent.putExtra("resultsList", resultsList);
             Toast.makeText(this, "You have scored " + score + " out of " + questions, Toast.LENGTH_LONG).show();
             startActivity(intent);
-        } else {
-            Intent intent = new Intent(this, MainActivityE2.class);
-            intent.putExtra("name", name);
-            intent.putExtra("score", score);
-            intent.putExtra("questions", questions);
-            startActivity(intent);
         }
+//          else {
+//            Intent intent = new Intent(this, MainActivityH3.class);
+//            intent.putExtra("name", name);
+//            intent.putExtra("score", score);
+//            intent.putExtra("questions", questions);
+//            startActivity(intent);
+//        }
     }
 
 
