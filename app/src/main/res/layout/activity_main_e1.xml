@@ -363,14 +363,14 @@
                 android:textSize="16sp" />
 
             <Button
-                android:id="@+id/submitE_A"
+                android:id="@+id/submit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="36dp"
                 android:layout_marginRight="16dp"
                 android:layout_weight="1"
                 android:background="@drawable/next_button"
-                android:onClick="submitE_A"
+                android:onClick="submit"
                 android:text="@string/next_button"
                 android:textSize="16sp" />
         </LinearLayout>

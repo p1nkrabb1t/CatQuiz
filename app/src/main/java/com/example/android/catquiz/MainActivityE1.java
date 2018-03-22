@@ -46,7 +46,7 @@ public class MainActivityE1 extends AppCompatActivity {
     /**
      * This method is called when the Next / Submit button is clicked.
      */
-    public void submitE_A(View view) {
+    public void submit(View view) {
         String q1 = onRadioButtonClickedE1();
         String q2 = checkEntryE2();
         String q3 = onRadioButtonClickedE3();

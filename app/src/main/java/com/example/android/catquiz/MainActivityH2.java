@@ -263,6 +263,9 @@ public class MainActivityH2 extends AppCompatActivity {
             Toast.makeText(this, "You have scored " + score + " out of " + questions, Toast.LENGTH_LONG).show();
             startActivity(intent);
         }
+        /**
+         * Below code left in but commented out for future proofing if more questions added
+         */
 //          else {
 //            Intent intent = new Intent(this, MainActivityH3.class);
 //            intent.putExtra("name", name);

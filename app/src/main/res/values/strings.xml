@@ -78,18 +78,45 @@
     <string name="tom">Tom</string>
     <string name="dave">Dave</string>
     <string name="prince">Prince</string>
+
     <string name="question_E2">How many lives is a cat commonly said to have?</string>
+
     <string name="question_E3">A cats\' diet makes it a..</string>
     <string name="herbivore">Herbivore</string>
     <string name="omnivore">Omnivore</string>
     <string name="carnivore">Carnivore</string>
+
     <string name="question_E4">Which of these senses are enhanced in cats compared with humans?</string>
     <string name="smell">Smell</string>
     <string name="sight_in_low_light">Sight in low light</string>
     <string name="touch">Touch</string>
     <string name="hearing">Hearing</string>
     <string name="taste_for_sweet_foods">Taste for sweet foods</string>
+
     <string name="question_E5">Cats have retractable claws:</string>
+
+    <string name="question_E6">Which of these is NOT a breed of cat?</string>
+    <string name="ansE6_1">Tabby</string>
+    <string name="ansE6_2">Persian</string>
+    <string name="ansE6_3">Siamese</string>
+    <string name="ansE6_4">Bengal</string>
+
+    <string name="question_E7">Can cats be trained to use a toilet?</string>
+
+    <string name="question_E8">How long on average do indoor cats live?</string>
+    <string name="ansE8_1">8 years</string>
+    <string name="ansE8_2">15 years</string>
+    <string name="ansE8_3">22 years</string>
+
+    <string name="question_E9">Which of these are signs your cat likes you?</string>
+    <string name="ansE9_1">Wagging tail</string>
+    <string name="ansE9_2">Purring</string>
+    <string name="ansE9_3">Butting his/her head on you</string>
+    <string name="ansE9_4">Laying on his/her back with belly exposed</string>
+    <string name="ansE9_5">Ears laid back</string>
+
+    <string name="question_E10">Cats typically sleep for around 1/3 of the day..</string>
+
 
     <!--Questions & Answers text- Medium Mode-->
     <string name="question_M1">Which of these are breeds of cat?</string>
@@ -98,31 +125,41 @@
     <string name="ragdoll">Ragdoll</string>
     <string name="russian_blue">Russian Blue</string>
     <string name="danish_white">Danish White</string>
+
     <string name="question_M2">Some cats do have thumbs</string>
+
     <string name="question_M3">What might a female cat be known as?</string>
     <string name="duchess">Duchess</string>
     <string name="queen">Queen</string>
     <string name="princess">Princess</string>
     <string name="empress">Empress</string>
+
     <string name="question_M4">Can cats taste sweet things?</string>
+
     <string name="question_M5">How much of their lives do cats typically sleep?</string>
     <string name="_30">30%</string>
     <string name="_50">50%</string>
     <string name="_70">70%</string>
+
     <string name="question_M7">Name a domestic cat breed with no tail?</string>
+
     <string name="question_M8">Should cats be given milk?</string>
     <string name="ans8_1">Yes, milk is good for cats</string>
     <string name="ans8_2">Yes, but only full fat milk.</string>
     <string name="ans8_3">No, cats are lactose intolerant</string>
     <string name="ans8_4">No, milk is poisonous to cats</string>
+
     <string name="question_M9">Which of these are poisonous to cats?</string>
     <string name="chocolate">Chocolate</string>
     <string name="garlic">Garlic</string>
     <string name="roses">Roses</string>
     <string name="lilies">Lilies</string>
     <string name="banana">Banana</string>
+
     <string name="question_M10">Cats sweat only through their paws</string>
+
     <string name="cat_breed">Cat Breed</string>
+
 
     <!--Questions & Answers text- Hard Mode-->
     <string name="ansH1_1">A cat\'s paw print is unique like our finger prints.</string>
@@ -131,7 +168,9 @@
     <string name="ansH1_4">Cats can see in three times the colour range that humans can.</string>
     <string name="ansH1_5">Cats have been used for mail delivery.</string>
     <string name="ansH1_6">Cats have around 40 different vocalisations.</string>
+
     <string name="question_H2">A cat\'s jaw can\'t move sideways..</string>
+
     <string name="question_H3">What do you call a group of cats?</string>
     <string name="pack">Pack</string>
     <string name="troop">Troop</string>
@@ -139,7 +178,9 @@
     <string name="colony">Colony</string>
     <string name="clowder">Clowder</string>
     <string name="covey">Covey</string>
+
     <string name="question_H4">How many colours does the Calico coat have?</string>
+
     <string name="question_H5">Adult cats \'Meow\' to get the attention of..</string>
     <string name="ansH5_1">Only other cats</string>
     <string name="ansH5_2">Only humans</string>
@@ -151,19 +192,22 @@
     <string name="ansH6_2">When cats groom each other</string>
     <string name="ansH6_3">When a cat asserts authority over another cat</string>
     <string name="ansH6_4">When a cat hasn\'t learned how to groom properly</string>
+
     <string name="question_H7">How old did the world\'s oldest ever domestic cat live to be?</string>
+
     <string name="question_H8">How many toes in total do cats usually have?</string>
     <string name="ansH8_1">16</string>
     <string name="ansH8_2">18</string>
     <string name="ansH8_3">20</string>
     <string name="ansH8_4">22</string>
     <string name="ansH8_5">24</string>
+
     <string name="ansH9_1">All kittens are born deaf</string>
     <string name="ansH9_2">When a cats tail is raised and vibrates at the tip, he/she is angry</string>
     <string name="ansH9_3">Male cats are more likely to be left-pawed, and female cats are more likely to be right-pawed</string>
     <string name="ansH9_4">Cats cannot climb down trees head first</string>
     <string name="ansH9_5">Female cats are more sensitive to catnip than males.</string>
-    <string name="question_H10">Cats have tiny barbs on their tongues called \'Melanocytes\'.</string>
 
+    <string name="question_H10">Cats have tiny barbs on their tongues called \'Melanocytes\'.</string>
 
 </resources>
