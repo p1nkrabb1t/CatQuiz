@@ -16,6 +16,7 @@ public class ScoreActivity extends AppCompatActivity {
     int level;
     String difficulty;
     String resultsList;
+    int percentage;
 
 
     @Override
@@ -30,8 +31,8 @@ public class ScoreActivity extends AppCompatActivity {
         resultsList = bundle.getString("KEY_RESULTS");
         TextView nameTextView = findViewById(R.id.nameTextview);
         nameTextView.setText(name);
-        int percentage = percentageCorrect();
-        displayPraise(percentage);
+        percentageCorrect();
+        displayPraise();
         displayNumOfCorrectQuestions();
         displayDifficulty();
         displayResultsSummary();
@@ -66,7 +67,7 @@ public class ScoreActivity extends AppCompatActivity {
     /**
      * This method changes the top message based on the percentage answered correctly
      */
-    public void displayPraise(int percentage) {
+    public void displayPraise() {
         TextView display = findViewById(R.id.judgement);
         if (percentage == 100) {
             display.setText(R.string.result_banner5);
@@ -84,13 +85,12 @@ public class ScoreActivity extends AppCompatActivity {
     /**
      * This method shows the percentage of correct answers
      */
-    public int percentageCorrect() {
+    public void percentageCorrect() {
         float pScore = score;
         float pQuestions = questions;
-        int percentage = (int) ((pScore / pQuestions) * 100.0f);
+        percentage = (int) ((pScore / pQuestions) * 100.0f);
         TextView questionsPercentage = findViewById(R.id.scorePercentage);
         questionsPercentage.setText(percentage + " %");
-        return percentage;
     }
 
     /**
@@ -108,7 +108,8 @@ public class ScoreActivity extends AppCompatActivity {
         Intent intent = new Intent(Intent.ACTION_SENDTO);
         intent.setData(Uri.parse("mailto:"));
         intent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.email_title) + name);
-        intent.putExtra(Intent.EXTRA_TEXT, name + " answered " + score + " out of " + questions + " questions correctly." + "\n" + resultsList);
+        intent.putExtra(Intent.EXTRA_TEXT, name + " answered " + score + " out of " + questions +
+                " questions correctly, scoring a total of " + percentage + "% on " + difficulty + " level. \n \n" + resultsList);
         if (intent.resolveActivity(getPackageManager()) != null) {
             startActivity(intent);
         }

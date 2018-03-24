@@ -34,7 +34,7 @@
 
     <!--Results Page & email-->
     <string name="you_scored">You Scored:</string>
-    <string name="results_message">Here is a summary of how you did:</string>
+    <string name="results_message">Here is a summary of questions answered:</string>
     <string name="incorrect">Incorrect</string>
     <string name="correct">Correct</string>
     <string name="results_Q1">Question 1: \u0020</string>
