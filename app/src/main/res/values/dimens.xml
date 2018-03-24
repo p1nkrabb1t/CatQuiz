@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="header_height">124dp</dimen>
+    <dimen name="add_button_M">56dp</dimen>
+
+    <dimen name="margin_S">8dp</dimen>
+    <dimen name="margin_M">16dp</dimen>
+    <dimen name="margin_L">24dp</dimen>
+    <dimen name="margin_XL">36dp</dimen>
+    <dimen name="margin_XXL">48dp</dimen>
+
+    <dimen name="padding_S">8dp</dimen>
+    <dimen name="padding_SM">10dp</dimen>
+    <dimen name="padding_L">24dp</dimen>
+    <dimen name="padding_M">16dp</dimen>
+
+    <dimen name="text_M">16sp</dimen>
+    <dimen name="text_L">24sp</dimen>
+    <dimen name="text_XXL">45sp</dimen>
+    <dimen name="text_XXXL">56sp</dimen>
+    <dimen name="text_ML">20sp</dimen>
+
+</resources>
