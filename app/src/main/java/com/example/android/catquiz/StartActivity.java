@@ -28,6 +28,26 @@ public class StartActivity extends AppCompatActivity {
     }
 
     /**
+     * This method saves data which would be lost on screen rotation (destroyed).
+     */
+    @Override
+    public void onSaveInstanceState(Bundle savedInstanceState) {
+        savedInstanceState.putInt("questions", questions);
+        super.onSaveInstanceState(savedInstanceState);
+    }
+
+    /**
+     * This method restores the previously saved data after the screen is reloaded in another orientation
+     */
+    @Override
+    public void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        questions = savedInstanceState.getInt("questions");
+        displayNumOfQuestions(questions);
+    }
+
+
+    /**
      * This method is called when the start button is clicked.
      */
     public void startQuiz(View view) {
@@ -52,7 +72,6 @@ public class StartActivity extends AppCompatActivity {
     public void onRadioButtonClicked() {
         RadioGroup difficulty = findViewById(R.id.difficulty);
         int id = difficulty.getCheckedRadioButtonId();
-
 
         switch (id) {
             case R.id.easy:
