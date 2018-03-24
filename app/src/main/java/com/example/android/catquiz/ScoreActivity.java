@@ -21,10 +21,10 @@ public class ScoreActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_score);
         Bundle bundle = getIntent().getExtras();
-        name = bundle.getString("name");
-        score = bundle.getInt("score");
-        questions = bundle.getInt("questions");
-        resultsList = bundle.getString("resultsList");
+        name = bundle.getString("KEY_NAME");
+        score = bundle.getInt("KEY_SCORE");
+        questions = bundle.getInt("KEY_NUM_QUESTIONS");
+        resultsList = bundle.getString("KEY_RESULTS");
         TextView nameTextView = findViewById(R.id.nameTextview);
         nameTextView.setText(name);
         int percentage = percentageCorrect();

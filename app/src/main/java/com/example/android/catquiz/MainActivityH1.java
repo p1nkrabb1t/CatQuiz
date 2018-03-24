@@ -37,8 +37,8 @@ public class MainActivityH1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_h1);
         Bundle bundle = getIntent().getExtras();
-        questions = bundle.getInt("questions");
-        name = bundle.getString("name");
+        questions = bundle.getInt("KEY_NUM_QUESTIONS");
+        name = bundle.getString("KEY_NAME");
         displayNumOfQuestions();
         chooseButton();
     }
@@ -264,18 +264,18 @@ public class MainActivityH1 extends AppCompatActivity {
     public void nextPage() {
         if (questions == 5) {
             Intent intent = new Intent(this, ScoreActivity.class);
-            intent.putExtra("name", name);
-            intent.putExtra("score", score);
-            intent.putExtra("questions", questions);
-            intent.putExtra("resultsList", resultsList);
+            intent.putExtra("KEY_NAME", name);
+            intent.putExtra("KEY_SCORE", score);
+            intent.putExtra("KEY_NUM_QUESTIONS", questions);
+            intent.putExtra("KEY_RESULTS", resultsList);
             Toast.makeText(this, "You have scored " + score + " out of " + questions, Toast.LENGTH_LONG).show();
             startActivity(intent);
         } else {
             Intent intent = new Intent(this, MainActivityH2.class);
-            intent.putExtra("name", name);
-            intent.putExtra("score", score);
-            intent.putExtra("questions", questions);
-            intent.putExtra("resultsList", resultsList);
+            intent.putExtra("KEY_NAME", name);
+            intent.putExtra("KEY_SCORE", score);
+            intent.putExtra("KEY_NUM_QUESTIONS", questions);
+            intent.putExtra("KEY_RESULTS", resultsList);
             startActivity(intent);
         }
     }

@@ -37,8 +37,8 @@ public class MainActivityH2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_h2);
         Bundle bundle = getIntent().getExtras();
-        questions = bundle.getInt("questions");
-        name = bundle.getString("name");
+        questions = bundle.getInt("KEY_NUM_QUESTIONS");
+        name = bundle.getString("KEY_NAME");
         displayNumOfQuestions();
         chooseButton();
     }
@@ -256,23 +256,24 @@ public class MainActivityH2 extends AppCompatActivity {
     public void nextPage() {
         if (questions == 10) {
             Intent intent = new Intent(this, ScoreActivity.class);
-            intent.putExtra("name", name);
-            intent.putExtra("score", score);
-            intent.putExtra("questions", questions);
-            intent.putExtra("resultsList", resultsList);
+            intent.putExtra("KEY_NAME", name);
+            intent.putExtra("KEY_SCORE", score);
+            intent.putExtra("KEY_NUM_QUESTIONS", questions);
+            intent.putExtra("KEY_RESULTS", resultsList);
             Toast.makeText(this, "You have scored " + score + " out of " + questions, Toast.LENGTH_LONG).show();
             startActivity(intent);
         }
         /**
          * Below code left in but commented out for future proofing if more questions added
          */
-//          else {
-//            Intent intent = new Intent(this, MainActivityH3.class);
-//            intent.putExtra("name", name);
-//            intent.putExtra("score", score);
-//            intent.putExtra("questions", questions);
-//            startActivity(intent);
-//        }
+        //        else {
+        //            Intent intent = new Intent(this, MainActivityH3.class);
+        //            intent.putExtra("KEY_NAME", name);
+        //            intent.putExtra("KEY_SCORE", score);
+        //            intent.putExtra("KEY_NUM_QUESTIONS", questions);
+        //            intent.putExtra("KEY_RESULTS", resultsList);
+        //            startActivity(intent);
+        //        }
     }
 
 
@@ -281,7 +282,7 @@ public class MainActivityH2 extends AppCompatActivity {
      */
     private String createScoreSummary(String q6, String q7, String q8, String q9, String q10) {
         Bundle bundle = getIntent().getExtras();
-        resultsList = bundle.getString("resultsList");
+        resultsList = bundle.getString("KEY_RESULTS");
 
         resultsList += "\n" + getString(R.string.results_Q6) + q6;
         resultsList += "\n" + getString(R.string.results_Q7) + q7;

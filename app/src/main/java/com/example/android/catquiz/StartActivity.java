@@ -42,7 +42,7 @@ public class StartActivity extends AppCompatActivity {
     @Override
     public void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
-        questions = savedInstanceState.getInt("questions");
+        questions = savedInstanceState.getInt("KEY_NUM_QUESTIONS");
         displayNumOfQuestions(questions);
     }
 
@@ -143,22 +143,22 @@ public class StartActivity extends AppCompatActivity {
             Toast.makeText(this, R.string.choose_difficulty_toast, Toast.LENGTH_SHORT).show();
         } else if (level == 1) {
             Intent intent = new Intent(this, MainActivityE1.class);
-            intent.putExtra("name", name);
-            intent.putExtra("questions", questions);
+            intent.putExtra("KEY_NAME", name);
+            intent.putExtra("KEY_NUM_QUESTIONS", questions);
             startActivity(intent);
         }
 
         if (level == 2) {
             Intent intent = new Intent(this, MainActivityM1.class);
-            intent.putExtra("name", name);
-            intent.putExtra("questions", questions);
+            intent.putExtra("KEY_NAME", name);
+            intent.putExtra("KEY_NUM_QUESTIONS", questions);
             startActivity(intent);
         }
 
         if (level == 3) {
             Intent intent = new Intent(this, MainActivityH1.class);
-            intent.putExtra("name", name);
-            intent.putExtra("questions", questions);
+            intent.putExtra("KEY_NAME", name);
+            intent.putExtra("KEY_NUM_QUESTIONS", questions);
             startActivity(intent);
         }
     }
