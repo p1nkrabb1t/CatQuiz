@@ -13,6 +13,8 @@ public class ScoreActivity extends AppCompatActivity {
     String name;
     int score;
     int questions;
+    int level;
+    String difficulty;
     String resultsList;
 
 
@@ -23,6 +25,7 @@ public class ScoreActivity extends AppCompatActivity {
         Bundle bundle = getIntent().getExtras();
         name = bundle.getString("KEY_NAME");
         score = bundle.getInt("KEY_SCORE");
+        level = bundle.getInt("KEY_LEVEL");
         questions = bundle.getInt("KEY_NUM_QUESTIONS");
         resultsList = bundle.getString("KEY_RESULTS");
         TextView nameTextView = findViewById(R.id.nameTextview);
@@ -30,6 +33,7 @@ public class ScoreActivity extends AppCompatActivity {
         int percentage = percentageCorrect();
         displayPraise(percentage);
         displayNumOfCorrectQuestions();
+        displayDifficulty();
         displayResultsSummary();
 
     }
@@ -40,6 +44,23 @@ public class ScoreActivity extends AppCompatActivity {
     public void displayNumOfCorrectQuestions() {
         TextView questionsCorrect = findViewById(R.id.numOfCorrectAnswers);
         questionsCorrect.setText("With " + score + " out of " + questions + " correct answers");
+    }
+
+    /**
+     * This method displays the difficulty level on which the user played
+     */
+    public void displayDifficulty() {
+        if (level == 1) {
+            difficulty = "Easy";
+        }
+        if (level == 2) {
+            difficulty = "Medium";
+        }
+        if (level == 3) {
+            difficulty = "Hard";
+        }
+        TextView difficultyLevel = findViewById(R.id.difficulty);
+        difficultyLevel.setText("On difficulty level: " + difficulty);
     }
 
     /**

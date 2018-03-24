@@ -15,9 +15,10 @@ import android.widget.Toast;
 
 
 public class MainActivityE1 extends AppCompatActivity {
-    String name = "";
-    int questions = 0;
+    String name;
+    int questions;
     int score = 0;
+    int level;
     int levelPointsAwarded = 1;
     int scoreQuestion1 = 0;
     int scoreQuestion2 = 0;
@@ -39,6 +40,7 @@ public class MainActivityE1 extends AppCompatActivity {
         Bundle bundle = getIntent().getExtras();
         questions = bundle.getInt("KEY_NUM_QUESTIONS");
         name = bundle.getString("KEY_NAME");
+        level = bundle.getInt("KEY_LEVEL");
         displayNumOfQuestions();
         chooseButton();
     }
@@ -249,6 +251,7 @@ public class MainActivityE1 extends AppCompatActivity {
             intent.putExtra("KEY_SCORE", score);
             intent.putExtra("KEY_NUM_QUESTIONS", questions);
             intent.putExtra("KEY_RESULTS", resultsList);
+            intent.putExtra("KEY_LEVEL", level);
             Toast.makeText(this, "You have scored " + score + " out of " + questions, Toast.LENGTH_LONG).show();
             startActivity(intent);
         } else {
@@ -257,6 +260,7 @@ public class MainActivityE1 extends AppCompatActivity {
             intent.putExtra("KEY_SCORE", score);
             intent.putExtra("KEY_NUM_QUESTIONS", questions);
             intent.putExtra("KEY_RESULTS", resultsList);
+            intent.putExtra("KEY_LEVEL", level);
             startActivity(intent);
         }
     }

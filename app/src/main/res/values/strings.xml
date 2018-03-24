@@ -8,7 +8,7 @@
     <string name="a_true">True</string>
     <string name="a_false">False</string>
     <string name="yes_no">Yes/No</string>
-
+    <string name="cat_breed">Cat Breed</string>
 
     <!--Toast messages-->
     <string name="choose_difficulty_toast">Please choose a difficulty setting</string>
@@ -74,24 +74,24 @@
 
     <!--Questions & Answers text- Easy Mode-->
     <string name="question_E1">What do you call a male cat?</string>
-    <string name="jack">Jack</string>
-    <string name="tom">Tom</string>
-    <string name="dave">Dave</string>
-    <string name="prince">Prince</string>
+    <string name="ansE1_1">Jack</string>
+    <string name="ansE1_2">Tom</string>
+    <string name="ansE1_3">Dave</string>
+    <string name="ansE1_4">Prince</string>
 
     <string name="question_E2">How many lives is a cat commonly said to have?</string>
 
     <string name="question_E3">A cats\' diet makes it a..</string>
-    <string name="herbivore">Herbivore</string>
-    <string name="omnivore">Omnivore</string>
-    <string name="carnivore">Carnivore</string>
+    <string name="ansE3_1">Herbivore</string>
+    <string name="ansE3_2">Omnivore</string>
+    <string name="ansE3_3">Carnivore</string>
 
     <string name="question_E4">Which of these senses are enhanced in cats compared with humans?</string>
-    <string name="smell">Smell</string>
-    <string name="sight_in_low_light">Sight in low light</string>
-    <string name="touch">Touch</string>
-    <string name="hearing">Hearing</string>
-    <string name="taste_for_sweet_foods">Taste for sweet foods</string>
+    <string name="ansE4_1">Smell</string>
+    <string name="ansE4_2">Sight in low light</string>
+    <string name="ansE4_3">Touch</string>
+    <string name="ansE4_4">Hearing</string>
+    <string name="ansE4_5">Taste for sweet foods</string>
 
     <string name="question_E5">Cats have retractable claws:</string>
 
@@ -120,45 +120,49 @@
 
     <!--Questions & Answers text- Medium Mode-->
     <string name="question_M1">Which of these are breeds of cat?</string>
-    <string name="bengal">Bengal</string>
-    <string name="chinese_longhair">Chinese Longhair</string>
-    <string name="ragdoll">Ragdoll</string>
-    <string name="russian_blue">Russian Blue</string>
-    <string name="danish_white">Danish White</string>
+    <string name="ansM1_1">Bengal</string>
+    <string name="ansM1_2">Chinese Longhair</string>
+    <string name="ansM1_3">Ragdoll</string>
+    <string name="ansM1_4">Russian Blue</string>
+    <string name="ansM1_5">Danish White</string>
 
     <string name="question_M2">Some cats do have thumbs</string>
 
     <string name="question_M3">What might a female cat be known as?</string>
-    <string name="duchess">Duchess</string>
-    <string name="queen">Queen</string>
-    <string name="princess">Princess</string>
-    <string name="empress">Empress</string>
+    <string name="ansM3_1">Duchess</string>
+    <string name="ansM3_2">Queen</string>
+    <string name="ansM3_3">Princess</string>
+    <string name="ansM3_4">Empress</string>
 
     <string name="question_M4">Can cats taste sweet things?</string>
 
     <string name="question_M5">How much of their lives do cats typically sleep?</string>
-    <string name="_30">30%</string>
-    <string name="_50">50%</string>
-    <string name="_70">70%</string>
+    <string name="ansM5_1">30%</string>
+    <string name="ansM5_2">50%</string>
+    <string name="ansM5_3">70%</string>
+
+    <string name="question_M6">Are tortoiseshell cats usually male or female?</string>
+    <string name="ansM6_1">Almost always male</string>
+    <string name="ansM6_2">Almost always female</string>
+    <string name="ansM6_3">Slightly higher chance of being male</string>
+    <string name="ansM6_4">Equal chance of being male or female</string>
 
     <string name="question_M7">Name a domestic cat breed with no tail?</string>
 
     <string name="question_M8">Should cats be given milk?</string>
-    <string name="ans8_1">Yes, milk is good for cats</string>
-    <string name="ans8_2">Yes, but only full fat milk.</string>
-    <string name="ans8_3">No, cats are lactose intolerant</string>
-    <string name="ans8_4">No, milk is poisonous to cats</string>
+    <string name="ansM8_1">Yes, milk is good for cats</string>
+    <string name="ansM8_2">Yes, but only full fat milk.</string>
+    <string name="ansM8_3">No, cats are lactose intolerant</string>
+    <string name="ansM8_4">No, milk is poisonous to cats</string>
 
     <string name="question_M9">Which of these are poisonous to cats?</string>
-    <string name="chocolate">Chocolate</string>
-    <string name="garlic">Garlic</string>
-    <string name="roses">Roses</string>
-    <string name="lilies">Lilies</string>
-    <string name="banana">Banana</string>
+    <string name="ansM9_1">Chocolate</string>
+    <string name="ansM9_2">Garlic</string>
+    <string name="ansM9_3">Roses</string>
+    <string name="ansM9_4">Lilies</string>
+    <string name="ansM9_5">Banana</string>
 
     <string name="question_M10">Cats sweat only through their paws</string>
-
-    <string name="cat_breed">Cat Breed</string>
 
 
     <!--Questions & Answers text- Hard Mode-->
@@ -172,12 +176,12 @@
     <string name="question_H2">A cat\'s jaw can\'t move sideways..</string>
 
     <string name="question_H3">What do you call a group of cats?</string>
-    <string name="pack">Pack</string>
-    <string name="troop">Troop</string>
-    <string name="cast">Cast</string>
-    <string name="colony">Colony</string>
-    <string name="clowder">Clowder</string>
-    <string name="covey">Covey</string>
+    <string name="ansH3_1">Pack</string>
+    <string name="ansH3_2">Troop</string>
+    <string name="ansH3_3">Cast</string>
+    <string name="ansH3_4">Colony</string>
+    <string name="ansH3_5">Clowder</string>
+    <string name="ansH3_6">Covey</string>
 
     <string name="question_H4">How many colours does the Calico coat have?</string>
 
@@ -209,5 +213,6 @@
     <string name="ansH9_5">Female cats are more sensitive to catnip than males.</string>
 
     <string name="question_H10">Cats have tiny barbs on their tongues called \'Melanocytes\'.</string>
+
 
 </resources>

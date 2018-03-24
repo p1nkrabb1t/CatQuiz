@@ -32,7 +32,7 @@ public class StartActivity extends AppCompatActivity {
      */
     @Override
     public void onSaveInstanceState(Bundle savedInstanceState) {
-        savedInstanceState.putInt("questions", questions);
+        savedInstanceState.putInt("KEY_NUM_QUESTIONS", questions);
         super.onSaveInstanceState(savedInstanceState);
     }
 
@@ -70,8 +70,8 @@ public class StartActivity extends AppCompatActivity {
      * This method gets the player's preferred difficulty setting
      */
     public void onRadioButtonClicked() {
-        RadioGroup difficulty = findViewById(R.id.difficulty);
-        int id = difficulty.getCheckedRadioButtonId();
+        RadioGroup setDifficulty = findViewById(R.id.setDifficulty);
+        int id = setDifficulty.getCheckedRadioButtonId();
 
         switch (id) {
             case R.id.easy:
@@ -145,6 +145,7 @@ public class StartActivity extends AppCompatActivity {
             Intent intent = new Intent(this, MainActivityE1.class);
             intent.putExtra("KEY_NAME", name);
             intent.putExtra("KEY_NUM_QUESTIONS", questions);
+            intent.putExtra("KEY_LEVEL", level);
             startActivity(intent);
         }
 
@@ -152,6 +153,7 @@ public class StartActivity extends AppCompatActivity {
             Intent intent = new Intent(this, MainActivityM1.class);
             intent.putExtra("KEY_NAME", name);
             intent.putExtra("KEY_NUM_QUESTIONS", questions);
+            intent.putExtra("KEY_LEVEL", level);
             startActivity(intent);
         }
 
@@ -159,6 +161,7 @@ public class StartActivity extends AppCompatActivity {
             Intent intent = new Intent(this, MainActivityH1.class);
             intent.putExtra("KEY_NAME", name);
             intent.putExtra("KEY_NUM_QUESTIONS", questions);
+            intent.putExtra("KEY_LEVEL", level);
             startActivity(intent);
         }
     }

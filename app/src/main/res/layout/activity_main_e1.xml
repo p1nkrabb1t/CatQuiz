@@ -72,7 +72,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/margin_M"
                     android:paddingLeft="@dimen/padding_L"
-                    android:text="@string/jack"
+                    android:text="@string/ansE1_1"
                     android:textSize="@dimen/text_M" />
 
                 <RadioButton
@@ -81,7 +81,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/margin_M"
                     android:paddingLeft="@dimen/padding_L"
-                    android:text="@string/tom"
+                    android:text="@string/ansE1_2"
                     android:textSize="@dimen/text_M" />
 
                 <RadioButton
@@ -90,7 +90,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/margin_M"
                     android:paddingLeft="@dimen/padding_L"
-                    android:text="@string/dave"
+                    android:text="@string/ansE1_3"
                     android:textSize="@dimen/text_M" />
 
                 <RadioButton
@@ -99,7 +99,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/margin_M"
                     android:paddingLeft="@dimen/padding_L"
-                    android:text="@string/prince"
+                    android:text="@string/ansE1_4"
                     android:textSize="@dimen/text_M" />
             </RadioGroup>
         </LinearLayout>
@@ -136,8 +136,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/margin_S"
-                android:layout_marginTop="@dimen/margin_S"
                 android:layout_marginLeft="@dimen/margin_S"
+                android:layout_marginTop="@dimen/margin_S"
                 android:background="#f7eff4"
                 android:hint="0"
                 android:inputType="number"
@@ -185,7 +185,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/margin_M"
                     android:paddingLeft="@dimen/padding_L"
-                    android:text="@string/herbivore"
+                    android:text="@string/ansE3_1"
                     android:textSize="@dimen/text_M" />
 
                 <RadioButton
@@ -194,7 +194,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/margin_M"
                     android:paddingLeft="@dimen/padding_L"
-                    android:text="@string/omnivore"
+                    android:text="@string/ansE3_2"
                     android:textSize="@dimen/text_M" />
 
                 <RadioButton
@@ -203,7 +203,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/margin_M"
                     android:paddingLeft="@dimen/padding_L"
-                    android:text="@string/carnivore"
+                    android:text="@string/ansE3_3"
                     android:textSize="@dimen/text_M" />
 
 
@@ -252,7 +252,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/margin_M"
                 android:paddingLeft="@dimen/padding_L"
-                android:text="@string/smell"
+                android:text="@string/ansE4_1"
                 android:textSize="@dimen/text_M" />
 
             <CheckBox
@@ -261,7 +261,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/margin_M"
                 android:paddingLeft="@dimen/padding_L"
-                android:text="@string/sight_in_low_light"
+                android:text="@string/ansE4_2"
                 android:textSize="@dimen/text_M" />
 
             <CheckBox
@@ -270,7 +270,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/margin_M"
                 android:paddingLeft="@dimen/padding_L"
-                android:text="@string/touch"
+                android:text="@string/ansE4_3"
                 android:textSize="@dimen/text_M" />
 
             <CheckBox
@@ -279,7 +279,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/margin_M"
                 android:paddingLeft="@dimen/padding_L"
-                android:text="@string/hearing"
+                android:text="@string/ansE4_4"
                 android:textSize="@dimen/text_M" />
 
             <CheckBox
@@ -288,7 +288,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/margin_M"
                 android:paddingLeft="@dimen/padding_L"
-                android:text="@string/taste_for_sweet_foods"
+                android:text="@string/ansE4_5"
                 android:textSize="@dimen/text_M" />
         </LinearLayout>
 

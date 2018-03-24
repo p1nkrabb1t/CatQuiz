@@ -18,6 +18,7 @@ public class MainActivityM1 extends AppCompatActivity {
     String name = "";
     int questions = 0;
     int score = 0;
+    int level;
     int levelPointsAwarded = 1;
     int scoreQuestion1 = 0;
     int scoreQuestion2 = 0;
@@ -39,6 +40,7 @@ public class MainActivityM1 extends AppCompatActivity {
         Bundle bundle = getIntent().getExtras();
         questions = bundle.getInt("KEY_NUM_QUESTIONS");
         name = bundle.getString("KEY_NAME");
+        level = bundle.getInt("KEY_LEVEL");
         displayNumOfQuestions();
         chooseButton();
     }
@@ -122,7 +124,7 @@ public class MainActivityM1 extends AppCompatActivity {
             answered1 = false;
             return q1;
         }
-        if (ans1_1 && ans1_2 && !ans1_3 && ans1_4 && !ans1_5) {
+        if (ans1_1 && !ans1_2 && ans1_3 && ans1_4 && !ans1_5) {
             scoreQuestion1 = levelPointsAwarded;
             q1 = getString(R.string.correct);
             answered1 = true;
@@ -248,6 +250,7 @@ public class MainActivityM1 extends AppCompatActivity {
             intent.putExtra("KEY_SCORE", score);
             intent.putExtra("KEY_NUM_QUESTIONS", questions);
             intent.putExtra("KEY_RESULTS", resultsList);
+            intent.putExtra("KEY_LEVEL", level);
             Toast.makeText(this, "You have scored " + score + " out of " + questions, Toast.LENGTH_LONG).show();
             startActivity(intent);
         } else {
@@ -256,6 +259,7 @@ public class MainActivityM1 extends AppCompatActivity {
             intent.putExtra("KEY_SCORE", score);
             intent.putExtra("KEY_NUM_QUESTIONS", questions);
             intent.putExtra("KEY_RESULTS", resultsList);
+            intent.putExtra("KEY_LEVEL", level);
             startActivity(intent);
         }
     }

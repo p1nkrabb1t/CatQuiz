@@ -16,7 +16,7 @@
         <ImageView
             android:id="@+id/banner_E1"
             android:layout_width="match_parent"
-            android:layout_height="124dp"
+            android:layout_height="@dimen/header_height"
             android:scaleType="centerCrop"
             android:src="@drawable/kit2" />
 
@@ -25,106 +25,116 @@
             android:id="@+id/judgement"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="@dimen/margin_M"
             android:background="@color/hot_pink"
             android:gravity="center_horizontal"
-            android:padding="8dp"
+            android:padding="@dimen/padding_S"
             android:text="score related message here"
             android:textAllCaps="true"
             android:textColor="@color/black"
-            android:textSize="16sp" />
+            android:textSize="@dimen/text_M" />
 
         <LinearLayout
 
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="16dp"
+            android:layout_margin="@dimen/margin_M"
             android:background="@drawable/shape"
             android:orientation="vertical"
-            android:padding="10dp">
+            android:padding="@dimen/padding_SM">
 
             <TextView
                 android:id="@+id/nameTextview"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginBottom="8dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginBottom="@dimen/margin_S"
+                android:layout_marginTop="@dimen/margin_S"
                 android:text="player name here"
                 android:textAllCaps="true"
                 android:textColor="@color/black"
-                android:textSize="20sp" />
+                android:textSize="@dimen/text_ML" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginBottom="8dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginBottom="@dimen/margin_S"
+                android:layout_marginTop="@dimen/margin_S"
                 android:text="@string/you_scored"
                 android:textAllCaps="false"
-                android:textSize="16sp" />
+                android:textSize="@dimen/text_M" />
 
             <TextView
                 android:id="@+id/scorePercentage"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginBottom="8dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginBottom="@dimen/margin_S"
+                android:layout_marginTop="@dimen/margin_S"
                 android:background="@drawable/score_bubble"
                 android:gravity="center"
                 android:text="0%"
                 android:textAllCaps="false"
                 android:textColor="@color/black"
-                android:textSize="45sp" />
+                android:textSize="@dimen/text_XXL" />
 
             <TextView
                 android:id="@+id/numOfCorrectAnswers"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginBottom="24dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="@dimen/margin_S"
                 android:text="With 0 out of 0 correct answers"
                 android:textAllCaps="false"
                 android:textColor="@color/black"
-                android:textSize="16sp" />
+                android:textSize="@dimen/text_M" />
+
+            <TextView
+                android:id="@+id/difficulty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/margin_L"
+                android:layout_marginTop="@dimen/margin_S"
+                android:text="On difficulty level: "
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_M" />
 
             <TextView
                 android:id="@+id/resultsSummary"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="24dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginBottom="@dimen/margin_L"
+                android:layout_marginTop="@dimen/margin_S"
                 android:text="results list here"
                 android:textAllCaps="false"
-                android:textSize="16sp" />
+                android:textSize="@dimen/text_M" />
 
             <Button
                 android:id="@+id/shareScore"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginBottom="8dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginBottom="@dimen/margin_S"
+                android:layout_marginTop="@dimen/margin_S"
                 android:background="@drawable/restart_button"
                 android:onClick="shareScore"
                 android:text="@string/send_score_button"
-                android:textSize="16sp" />
+                android:textSize="@dimen/text_M" />
 
             <Button
                 android:id="@+id/restart"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginBottom="24dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginBottom="@dimen/margin_L"
+                android:layout_marginTop="@dimen/margin_S"
                 android:background="@drawable/next_button"
                 android:onClick="restart"
                 android:text="@string/play_again_button"
-                android:textSize="16sp" />
-
+                android:textSize="@dimen/text_M" />
 
         </LinearLayout>
     </LinearLayout>
