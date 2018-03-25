@@ -52,7 +52,15 @@
     <string name="result_banner3">Not Bad</string>
     <string name="result_banner4">Well done!</string>
     <string name="result_banner5">Puuuuurrrfect!!</string>
+    <string name="percent">%1$d%2$s</string>
+    <string name="correct_answers">With %1$d out of %2$d correct answers.</string>
+    <string name="display_level">On difficulty level: %1$s</string>
+    <string name="level_1">Easy</string>
+    <string name="level_2">Medium</string>
+    <string name="level_3">Hard</string>
     <string name="email_title">Cat Quiz Score for \u0020</string>
+    <string name="email_score_message">\u0020 answered %1$d out of %2$d questions correctly, scoring a total of %3$d%4$s on %5$s level. </string>
+
 
     <!--Question pages title info bar -->
     <string name="questions1_5">Questions 1–5 of \u0020</string>

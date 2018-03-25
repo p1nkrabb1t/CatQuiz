@@ -44,7 +44,7 @@ public class ScoreActivity extends AppCompatActivity {
      */
     public void displayNumOfCorrectQuestions() {
         TextView questionsCorrect = findViewById(R.id.numOfCorrectAnswers);
-        questionsCorrect.setText("With " + score + " out of " + questions + " correct answers");
+        questionsCorrect.setText(getString(R.string.correct_answers, score, questions));
     }
 
     /**
@@ -52,16 +52,16 @@ public class ScoreActivity extends AppCompatActivity {
      */
     public void displayDifficulty() {
         if (level == 1) {
-            difficulty = "Easy";
+            difficulty = getString(R.string.level_1);
         }
         if (level == 2) {
-            difficulty = "Medium";
+            difficulty = getString(R.string.level_2);
         }
         if (level == 3) {
-            difficulty = "Hard";
+            difficulty = getString(R.string.level_3);
         }
         TextView difficultyLevel = findViewById(R.id.difficulty);
-        difficultyLevel.setText("On difficulty level: " + difficulty);
+        difficultyLevel.setText(getString(R.string.display_level, difficulty));
     }
 
     /**
@@ -90,7 +90,7 @@ public class ScoreActivity extends AppCompatActivity {
         float pQuestions = questions;
         percentage = (int) ((pScore / pQuestions) * 100.0f);
         TextView questionsPercentage = findViewById(R.id.scorePercentage);
-        questionsPercentage.setText(percentage + " %");
+        questionsPercentage.setText(getString(R.string.percent, percentage, "%"));
     }
 
     /**
@@ -108,8 +108,8 @@ public class ScoreActivity extends AppCompatActivity {
         Intent intent = new Intent(Intent.ACTION_SENDTO);
         intent.setData(Uri.parse("mailto:"));
         intent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.email_title) + name);
-        intent.putExtra(Intent.EXTRA_TEXT, name + " answered " + score + " out of " + questions +
-                " questions correctly, scoring a total of " + percentage + "% on " + difficulty + " level. \n \n" + resultsList);
+        intent.putExtra(Intent.EXTRA_TEXT, name + getString(R.string.email_score_message,
+                score, questions, percentage, "%", difficulty) + "\n \n" + resultsList);
         if (intent.resolveActivity(getPackageManager()) != null) {
             startActivity(intent);
         }
