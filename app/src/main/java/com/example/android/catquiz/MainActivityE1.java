@@ -252,7 +252,7 @@ public class MainActivityE1 extends AppCompatActivity {
             intent.putExtra("KEY_NUM_QUESTIONS", questions);
             intent.putExtra("KEY_RESULTS", resultsList);
             intent.putExtra("KEY_LEVEL", level);
-            Toast.makeText(this, "You have scored " + score + " out of " + questions, Toast.LENGTH_LONG).show();
+            Toast.makeText(this, getString(com.example.android.catquiz.R.string.score_toast, score, questions), Toast.LENGTH_LONG).show();
             startActivity(intent);
         } else {
             Intent intent = new Intent(this, MainActivityE2.class);

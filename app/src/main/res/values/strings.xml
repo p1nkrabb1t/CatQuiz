@@ -221,6 +221,7 @@
     <string name="ansH9_5">Female cats are more sensitive to catnip than males.</string>
 
     <string name="question_H10">Cats have tiny barbs on their tongues called \'Melanocytes\'.</string>
+    <string name="score_toast">You have scored %1$d out of %2$d!</string>
 
 
 </resources>
