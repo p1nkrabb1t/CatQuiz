@@ -61,7 +61,7 @@ public class StartActivity extends AppCompatActivity {
      * This method gets the player's name.
      */
     public String getName() {
-        EditText nameEntry = findViewById(R.id.name);
+        EditText nameEntry = findViewById(R.id.et_name);
         String name = nameEntry.getText().toString();
         return name;
     }
@@ -70,19 +70,19 @@ public class StartActivity extends AppCompatActivity {
      * This method gets the player's preferred difficulty setting
      */
     public void onRadioButtonClicked() {
-        RadioGroup setDifficulty = findViewById(R.id.setDifficulty);
+        RadioGroup setDifficulty = findViewById(R.id.rg_set_difficulty);
         int id = setDifficulty.getCheckedRadioButtonId();
 
         switch (id) {
-            case R.id.easy:
+            case R.id.rb_easy:
                 level = 1;
                 levelChosen = true;
                 break;
-            case R.id.medium:
+            case R.id.rb_medium:
                 level = 2;
                 levelChosen = true;
                 break;
-            case R.id.hard:
+            case R.id.rb_hard:
                 level = 3;
                 levelChosen = true;
                 break;
@@ -131,7 +131,7 @@ public class StartActivity extends AppCompatActivity {
      * This method displays the number of quiz questions on the scree, as per the users choice
      */
     private void displayNumOfQuestions(int number) {
-        TextView questionsTextView = findViewById(R.id.quantity_text_view);
+        TextView questionsTextView = findViewById(R.id.tv_questions_quantity);
         questionsTextView.setText("" + number);
     }
 
