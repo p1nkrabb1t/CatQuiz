@@ -29,7 +29,7 @@ public class ScoreActivity extends AppCompatActivity {
         level = bundle.getInt("KEY_LEVEL");
         questions = bundle.getInt("KEY_NUM_QUESTIONS");
         resultsList = bundle.getString("KEY_RESULTS");
-        TextView nameTextView = findViewById(R.id.nameTextview);
+        TextView nameTextView = findViewById(R.id.tv_name);
         nameTextView.setText(name);
         percentageCorrect();
         displayPraise();
@@ -43,7 +43,7 @@ public class ScoreActivity extends AppCompatActivity {
      * This method displays how many of the total questions were answered right or wrong
      */
     public void displayNumOfCorrectQuestions() {
-        TextView questionsCorrect = findViewById(R.id.numOfCorrectAnswers);
+        TextView questionsCorrect = findViewById(R.id.tv_num_correct_answers);
         questionsCorrect.setText(getString(R.string.correct_answers, score, questions));
     }
 
@@ -60,7 +60,7 @@ public class ScoreActivity extends AppCompatActivity {
         if (level == 3) {
             difficulty = getString(R.string.level_3);
         }
-        TextView difficultyLevel = findViewById(R.id.difficulty);
+        TextView difficultyLevel = findViewById(R.id.tv_difficulty);
         difficultyLevel.setText(getString(R.string.display_level, difficulty));
     }
 
@@ -68,7 +68,7 @@ public class ScoreActivity extends AppCompatActivity {
      * This method changes the top message based on the percentage answered correctly
      */
     public void displayPraise() {
-        TextView display = findViewById(R.id.judgement);
+        TextView display = findViewById(R.id.tv_judgement);
         if (percentage == 100) {
             display.setText(R.string.result_banner5);
         } else if (percentage >= 80) {
@@ -89,7 +89,7 @@ public class ScoreActivity extends AppCompatActivity {
         float pScore = score;
         float pQuestions = questions;
         percentage = (int) ((pScore / pQuestions) * 100.0f);
-        TextView questionsPercentage = findViewById(R.id.scorePercentage);
+        TextView questionsPercentage = findViewById(R.id.tv_score_percentage);
         questionsPercentage.setText(getString(R.string.percent, percentage, "%"));
     }
 
@@ -97,7 +97,7 @@ public class ScoreActivity extends AppCompatActivity {
      * This method shows a summary of question results
      */
     public void displayResultsSummary() {
-        TextView results = findViewById(R.id.resultsSummary);
+        TextView results = findViewById(R.id.tv_results_summary);
         results.setText(resultsList);
     }
 

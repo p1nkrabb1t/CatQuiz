@@ -14,7 +14,7 @@
 
 
         <ImageView
-            android:id="@+id/banner_E1"
+            android:id="@+id/img_banner_E1"
             android:layout_width="match_parent"
             android:layout_height="@dimen/header_height"
             android:scaleType="centerCrop"
@@ -22,7 +22,7 @@
 
 
         <TextView
-            android:id="@+id/judgement"
+            android:id="@+id/tv_judgement"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/margin_M"
@@ -44,7 +44,7 @@
             android:padding="@dimen/padding_SM">
 
             <TextView
-                android:id="@+id/nameTextview"
+                android:id="@+id/tv_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
@@ -66,7 +66,7 @@
                 android:textSize="@dimen/text_M" />
 
             <TextView
-                android:id="@+id/scorePercentage"
+                android:id="@+id/tv_score_percentage"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
@@ -80,7 +80,7 @@
                 android:textSize="@dimen/text_XXL" />
 
             <TextView
-                android:id="@+id/numOfCorrectAnswers"
+                android:id="@+id/tv_num_correct_answers"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
@@ -91,7 +91,7 @@
                 android:textSize="@dimen/text_M" />
 
             <TextView
-                android:id="@+id/difficulty"
+                android:id="@+id/tv_difficulty"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
@@ -103,7 +103,7 @@
                 android:textSize="@dimen/text_M" />
 
             <TextView
-                android:id="@+id/resultsSummary"
+                android:id="@+id/tv_results_summary"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/margin_L"
@@ -113,7 +113,7 @@
                 android:textSize="@dimen/text_M" />
 
             <Button
-                android:id="@+id/shareScore"
+                android:id="@+id/btn_share_score"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
@@ -125,7 +125,7 @@
                 android:textSize="@dimen/text_M" />
 
             <Button
-                android:id="@+id/restart"
+                android:id="@+id/btn_restart"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
