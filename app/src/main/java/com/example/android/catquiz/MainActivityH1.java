@@ -77,7 +77,7 @@ public class MainActivityH1 extends AppCompatActivity {
      * This method shows the user how far into the quiz they are.
      */
     public void displayNumOfQuestions() {
-        TextView questionsDisplay = findViewById(R.id.questionsQty);
+        TextView questionsDisplay = findViewById(R.id.tv_questions_qty_message);
         questionsDisplay.setText(getString(R.string.questions1_5) + questions);
     }
 
@@ -85,7 +85,7 @@ public class MainActivityH1 extends AppCompatActivity {
      * This method changes the button text according to whether there are more questions or not.
      */
     public void chooseButton() {
-        Button buttonText = findViewById(R.id.submit);
+        Button buttonText = findViewById(R.id.btn_submit);
         if (questions == 5) {
             buttonText.setText(R.string.submit_button);
         } else {
@@ -109,12 +109,12 @@ public class MainActivityH1 extends AppCompatActivity {
      */
     private String getCheckedStateH1() {
         String q1 = "";
-        CheckBox q11 = findViewById(R.id.qH1_1);
-        CheckBox q12 = findViewById(R.id.qH1_2);
-        CheckBox q13 = findViewById(R.id.qH1_3);
-        CheckBox q14 = findViewById(R.id.qH1_4);
-        CheckBox q15 = findViewById(R.id.qH1_5);
-        CheckBox q16 = findViewById(R.id.qH1_6);
+        CheckBox q11 = findViewById(R.id.cb_qH1_option_1);
+        CheckBox q12 = findViewById(R.id.cb_qH1_option_2);
+        CheckBox q13 = findViewById(R.id.cb_qH1_option_3);
+        CheckBox q14 = findViewById(R.id.cb_qH1_option_4);
+        CheckBox q15 = findViewById(R.id.cb_qH1_option_5);
+        CheckBox q16 = findViewById(R.id.cb_qH1_option_6);
         boolean ans1_1 = q11.isChecked();
         boolean ans1_2 = q12.isChecked();
         boolean ans1_3 = q13.isChecked();
@@ -143,15 +143,15 @@ public class MainActivityH1 extends AppCompatActivity {
      */
     public String onRadioButtonClickedH2() {
         String q2 = "";
-        RadioGroup question2 = findViewById(R.id.question_H2);
+        RadioGroup question2 = findViewById(R.id.rg_question_H2);
         int id = question2.getCheckedRadioButtonId();
         switch (id) {
-            case R.id.qH2_1:
+            case R.id.rb_qH2_option_1:
                 q2 = getString(R.string.correct);
                 scoreQuestion2 = levelPointsAwarded;
                 answered2 = true;
                 break;
-            case R.id.qH2_2:
+            case R.id.rb_qH2_option_2:
                 q2 = getString(R.string.incorrect);
                 scoreQuestion2 = 0;
                 answered2 = true;
@@ -165,35 +165,35 @@ public class MainActivityH1 extends AppCompatActivity {
      */
     public String onRadioButtonClickedH3() {
         String q3 = "";
-        RadioGroup question3 = findViewById(R.id.question_H3);
+        RadioGroup question3 = findViewById(R.id.rg_question_H3);
         int id = question3.getCheckedRadioButtonId();
         switch (id) {
-            case R.id.qH3_1:
+            case R.id.rb_qH3_option_1:
                 q3 = getString(R.string.incorrect);
                 scoreQuestion3 = 0;
                 answered3 = true;
                 break;
-            case R.id.qH3_2:
+            case R.id.rb_qH3_option_2:
                 q3 = getString(R.string.incorrect);
                 scoreQuestion3 = 0;
                 answered3 = true;
                 break;
-            case R.id.qH3_3:
+            case R.id.rb_qH3_option_3:
                 q3 = getString(R.string.incorrect);
                 scoreQuestion3 = 0;
                 answered3 = true;
                 break;
-            case R.id.qH3_4:
+            case R.id.rb_qH3_option_4:
                 q3 = getString(R.string.incorrect);
                 scoreQuestion3 = 0;
                 answered3 = true;
                 break;
-            case R.id.qH3_5:
+            case R.id.rb_qH3_option_5:
                 q3 = getString(R.string.correct);
                 scoreQuestion3 = levelPointsAwarded;
                 answered3 = true;
                 break;
-            case R.id.qH3_6:
+            case R.id.rb_qH3_option_6:
                 q3 = getString(R.string.incorrect);
                 scoreQuestion3 = 0;
                 answered3 = true;
@@ -207,7 +207,7 @@ public class MainActivityH1 extends AppCompatActivity {
      */
     public String checkEntryH4() {
         String q4 = "";
-        EditText question4 = findViewById(R.id.question_H4);
+        EditText question4 = findViewById(R.id.et_question_H4);
         if (question4.getText().toString().equals(null) || question4.getText().toString().equals("")) {
             q4 = "";
             answered4 = false;
@@ -232,25 +232,25 @@ public class MainActivityH1 extends AppCompatActivity {
      */
     public String onRadioButtonClickedH5() {
         String q5 = "";
-        RadioGroup questionE3 = findViewById(R.id.question_H5);
+        RadioGroup questionE3 = findViewById(R.id.rg_question_H5);
         int id = questionE3.getCheckedRadioButtonId();
         switch (id) {
-            case R.id.qH5_1:
+            case R.id.rb_qH5_option_1:
                 q5 = getString(R.string.incorrect);
                 scoreQuestion5 = 0;
                 answered5 = true;
                 break;
-            case R.id.qH5_2:
+            case R.id.rb_qH5_option_2:
                 q5 = getString(R.string.correct);
                 scoreQuestion5 = levelPointsAwarded;
                 answered5 = true;
                 break;
-            case R.id.qH5_3:
+            case R.id.rb_qH5_option_3:
                 q5 = getString(R.string.incorrect);
                 scoreQuestion5 = 0;
                 answered5 = true;
                 break;
-            case R.id.qH5_4:
+            case R.id.rb_qH5_option_4:
                 q5 = getString(R.string.incorrect);
                 scoreQuestion5 = 0;
                 answered5 = true;
