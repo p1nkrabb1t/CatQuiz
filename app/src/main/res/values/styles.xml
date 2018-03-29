@@ -9,7 +9,7 @@
     </style>
 
     <!-- Style for question numbers -->
-    <style name="QuestionNumTextViewStyle" parent="Widget.AppCompat.CompoundButton.CheckBox">
+    <style name="QuestionNumTextViewStyle" parent="@android:style/TextAppearance">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginTop">@dimen/margin_S</item>
@@ -20,7 +20,7 @@
     </style>
 
     <!-- Style for question text -->
-    <style name="QuestionTextViewStyle" parent="Widget.AppCompat.CompoundButton.CheckBox">
+    <style name="QuestionTextViewStyle" parent="@android:style/TextAppearance">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginTop">@dimen/margin_S</item>
