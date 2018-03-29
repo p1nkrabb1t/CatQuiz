@@ -107,7 +107,7 @@ public class ScoreActivity extends AppCompatActivity {
     public void shareScore(View view) {
         Intent intent = new Intent(Intent.ACTION_SENDTO);
         intent.setData(Uri.parse("mailto:"));
-        intent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.email_title) + name);
+        intent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.email_title, name));
         intent.putExtra(Intent.EXTRA_TEXT, name + getString(R.string.email_score_message,
                 score, questions, percentage, "%", difficulty) + "\n \n" + resultsList);
         if (intent.resolveActivity(getPackageManager()) != null) {

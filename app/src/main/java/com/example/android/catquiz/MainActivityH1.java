@@ -78,7 +78,7 @@ public class MainActivityH1 extends AppCompatActivity {
      */
     public void displayNumOfQuestions() {
         TextView questionsDisplay = findViewById(R.id.tv_questions_qty_message);
-        questionsDisplay.setText(getString(R.string.questions1_5) + questions);
+        questionsDisplay.setText(getString(R.string.questions1_5, questions));
     }
 
     /**

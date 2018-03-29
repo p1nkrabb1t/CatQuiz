@@ -62,7 +62,7 @@ public class StartActivity extends AppCompatActivity {
      */
     public String getName() {
         EditText nameEntry = findViewById(R.id.et_name);
-        String name = nameEntry.getText().toString();
+        name = nameEntry.getText().toString();
         return name;
     }
 
@@ -128,11 +128,11 @@ public class StartActivity extends AppCompatActivity {
 
 
     /**
-     * This method displays the number of quiz questions on the scree, as per the users choice
+     * This method displays the number of quiz questions on the screen, as per the users choice
      */
     private void displayNumOfQuestions(int number) {
-        TextView questionsTextView = findViewById(R.id.tv_questions_quantity);
-        questionsTextView.setText("" + number);
+        TextView questionsTextView = findViewById(R.id.tv_set_questions_qty);
+        questionsTextView.setText(String.valueOf(number));
     }
 
     /**

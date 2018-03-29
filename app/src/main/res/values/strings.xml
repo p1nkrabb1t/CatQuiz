@@ -59,15 +59,15 @@
     <string name="level_1">Easy</string>
     <string name="level_2">Medium</string>
     <string name="level_3">Hard</string>
-    <string name="email_title">Cat Quiz Score for \u0020</string>
-    <string name="email_score_message">\u0020 answered %1$d out of %2$d questions correctly, scoring a total of %3$d%4$s on %5$s level. </string>
+    <string name="email_title">Cat Quiz Score for %1$s</string>
+    <string name="email_score_message">\u0020answered %1$d out of %2$d questions correctly, scoring a total of %3$d%4$s on %5$s level. </string>
 
 
     <!--Question pages title info bar -->
-    <string name="questions1_5">Questions 1–5 of \u0020</string>
-    <string name="questions6_10">Questions 6–10 of \u0020</string>
-    <string name="questions11_15">Questions 11–15 of \u0020</string>
-    <string name="questions16_20">Questions 16–20 of \u0020</string>
+    <string name="questions1_5">Questions 1–5 of %1$d</string>
+    <string name="questions6_10">Questions 6–10 of %1$d</string>
+    <string name="questions11_15">Questions 11–15 of %1$d</string>
+    <string name="questions16_20">Questions 16–20 of %1$d</string>
 
     <!--Question pages question numbers-->
     <string name="question_1">Question 1.</string>
@@ -222,7 +222,6 @@
     <string name="ansH9_5">Female cats are more sensitive to catnip than males.</string>
 
     <string name="question_H10">Cats have tiny barbs on their tongues called \'Melanocytes\'.</string>
-
 
 
 </resources>
