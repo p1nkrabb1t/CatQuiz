@@ -8,4 +8,35 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!-- Style for question numbers -->
+    <style name="QuestionNumTextViewStyle" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/margin_S</item>
+        <item name="android:layout_marginBottom">@dimen/margin_S</item>
+        <item name="android:textSize">@dimen/text_M</item>
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <!-- Style for question text -->
+    <style name="QuestionTextViewStyle" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/margin_S</item>
+        <item name="android:layout_marginBottom">@dimen/margin_S</item>
+        <item name="android:textSize">@dimen/text_M</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <!-- Style for answer option checkboxes -->
+    <style name="QuizCheckBoxStyle" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/margin_M</item>
+        <item name="android:paddingLeft">@dimen/padding_L</item>
+        <item name="android:textSize">@dimen/text_M</item>
+    </style>
+
 </resources>

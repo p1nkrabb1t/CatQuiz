@@ -43,13 +43,8 @@
             android:padding="@dimen/padding_SM">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/margin_S"
-                android:layout_marginTop="@dimen/margin_S"
-                android:text="@string/question_6"
-                android:textAllCaps="true"
-                android:textSize="@dimen/text_M" />
+                style="@style/QuestionNumTextViewStyle"
+                android:text="@string/question_6" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -113,13 +108,8 @@
             android:padding="@dimen/padding_SM">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/margin_S"
-                android:layout_marginTop="@dimen/margin_S"
-                android:text="@string/question_7"
-                android:textAllCaps="true"
-                android:textSize="@dimen/text_M" />
+                style="@style/QuestionNumTextViewStyle"
+                android:text="@string/question_7" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -156,13 +146,8 @@
             android:padding="@dimen/padding_SM">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/margin_S"
-                android:layout_marginTop="@dimen/margin_S"
-                android:text="@string/question_8"
-                android:textAllCaps="true"
-                android:textSize="@dimen/text_M" />
+                style="@style/QuestionNumTextViewStyle"
+                android:text="@string/question_8" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -220,13 +205,8 @@
             android:padding="@dimen/padding_SM">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/margin_S"
-                android:layout_marginTop="@dimen/margin_S"
-                android:text="@string/question_9"
-                android:textAllCaps="true"
-                android:textSize="@dimen/text_M" />
+                style="@style/QuestionNumTextViewStyle"
+                android:text="@string/question_9" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -301,13 +281,8 @@
             android:padding="@dimen/padding_SM">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/margin_S"
-                android:layout_marginTop="@dimen/margin_S"
-                android:text="@string/question_10"
-                android:textAllCaps="true"
-                android:textSize="@dimen/text_M" />
+                style="@style/QuestionNumTextViewStyle"
+                android:text="@string/question_10" />
 
             <TextView
                 android:layout_width="wrap_content"

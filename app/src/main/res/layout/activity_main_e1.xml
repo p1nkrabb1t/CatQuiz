@@ -43,13 +43,8 @@
             android:padding="@dimen/padding_SM">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/margin_S"
-                android:layout_marginTop="@dimen/margin_S"
-                android:text="@string/question_1"
-                android:textAllCaps="true"
-                android:textSize="@dimen/text_M" />
+                style="@style/QuestionNumTextViewStyle"
+                android:text="@string/question_1" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -113,13 +108,8 @@
             android:padding="@dimen/padding_SM">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/margin_S"
-                android:layout_marginTop="@dimen/margin_S"
-                android:text="@string/question_2"
-                android:textAllCaps="true"
-                android:textSize="@dimen/text_M" />
+                style="@style/QuestionNumTextViewStyle"
+                android:text="@string/question_2" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -156,13 +146,8 @@
             android:padding="@dimen/padding_SM">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/margin_S"
-                android:layout_marginTop="@dimen/margin_S"
-                android:text="@string/question_3"
-                android:textAllCaps="true"
-                android:textSize="@dimen/text_M" />
+                style="@style/QuestionNumTextViewStyle"
+                android:text="@string/question_3" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -220,13 +205,8 @@
             android:padding="@dimen/padding_SM">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/margin_S"
-                android:layout_marginTop="@dimen/margin_S"
-                android:text="@string/question_4"
-                android:textAllCaps="true"
-                android:textSize="@dimen/text_M" />
+                style="@style/QuestionNumTextViewStyle"
+                android:text="@string/question_4" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -248,48 +228,28 @@
 
             <CheckBox
                 android:id="@+id/cb_qE4_option_1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/margin_M"
-                android:paddingLeft="@dimen/padding_L"
-                android:text="@string/ansE4_1"
-                android:textSize="@dimen/text_M" />
+                style="@style/QuizCheckBoxStyle"
+                android:text="@string/ansE4_1" />
 
             <CheckBox
                 android:id="@+id/cb_qE4_option_2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/margin_M"
-                android:paddingLeft="@dimen/padding_L"
-                android:text="@string/ansE4_2"
-                android:textSize="@dimen/text_M" />
+                style="@style/QuizCheckBoxStyle"
+                android:text="@string/ansE4_2" />
 
             <CheckBox
                 android:id="@+id/cb_qE4_option_3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/margin_M"
-                android:paddingLeft="@dimen/padding_L"
-                android:text="@string/ansE4_3"
-                android:textSize="@dimen/text_M" />
+                style="@style/QuizCheckBoxStyle"
+                android:text="@string/ansE4_3" />
 
             <CheckBox
                 android:id="@+id/cb_qE4_option_4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/margin_M"
-                android:paddingLeft="@dimen/padding_L"
-                android:text="@string/ansE4_4"
-                android:textSize="@dimen/text_M" />
+                style="@style/QuizCheckBoxStyle"
+                android:text="@string/ansE4_4" />
 
             <CheckBox
                 android:id="@+id/cb_qE4_option_5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/margin_M"
-                android:paddingLeft="@dimen/padding_L"
-                android:text="@string/ansE4_5"
-                android:textSize="@dimen/text_M" />
+                style="@style/QuizCheckBoxStyle"
+                android:text="@string/ansE4_5" />
         </LinearLayout>
 
         <LinearLayout
@@ -301,13 +261,8 @@
             android:padding="@dimen/padding_SM">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/margin_S"
-                android:layout_marginTop="@dimen/margin_S"
-                android:text="@string/question_5"
-                android:textAllCaps="true"
-                android:textSize="@dimen/text_M" />
+                style="@style/QuestionNumTextViewStyle"
+                android:text="@string/question_5" />
 
             <TextView
                 android:layout_width="wrap_content"
