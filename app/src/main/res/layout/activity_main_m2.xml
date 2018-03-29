@@ -14,7 +14,7 @@
 
 
         <ImageView
-            android:id="@+id/banner_M2"
+            android:id="@+id/img_banner_M2"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/header_height"
             android:scaleType="centerCrop"
@@ -22,7 +22,7 @@
 
 
         <TextView
-            android:id="@+id/questionsQty"
+            android:id="@+id/tv_questions_qty_message"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/margin_M"
@@ -62,12 +62,12 @@
                 android:textSize="@dimen/text_M" />
 
             <RadioGroup
-                android:id="@+id/question_M6"
+                android:id="@+id/rg_question_M6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
                 <RadioButton
-                    android:id="@+id/qM6_1"
+                    android:id="@+id/rb_qM6_option_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/margin_M"
@@ -76,7 +76,7 @@
                     android:textSize="@dimen/text_M" />
 
                 <RadioButton
-                    android:id="@+id/qM6_2"
+                    android:id="@+id/rb_qM6_option_2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/margin_M"
@@ -85,7 +85,7 @@
                     android:textSize="@dimen/text_M" />
 
                 <RadioButton
-                    android:id="@+id/qM6_3"
+                    android:id="@+id/rb_qM6_option_3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/margin_M"
@@ -94,7 +94,7 @@
                     android:textSize="@dimen/text_M" />
 
                 <RadioButton
-                    android:id="@+id/qM6_4"
+                    android:id="@+id/rb_qM6_option_4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/margin_M"
@@ -132,7 +132,7 @@
                 android:textSize="@dimen/text_M" />
 
             <EditText
-                android:id="@+id/question_M7"
+                android:id="@+id/et_question_M7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/margin_S"
@@ -174,12 +174,12 @@
                 android:textSize="@dimen/text_M" />
 
             <RadioGroup
-                android:id="@+id/question_M8"
+                android:id="@+id/rg_question_M8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
                 <RadioButton
-                    android:id="@+id/qM8_1"
+                    android:id="@+id/rb_qM8_option_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/margin_M"
@@ -188,7 +188,7 @@
                     android:textSize="@dimen/text_M" />
 
                 <RadioButton
-                    android:id="@+id/qM8_2"
+                    android:id="@+id/rb_qM8_option_2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/margin_M"
@@ -197,7 +197,7 @@
                     android:textSize="@dimen/text_M" />
 
                 <RadioButton
-                    android:id="@+id/qM8_3"
+                    android:id="@+id/rb_qM8_option_3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/margin_M"
@@ -206,7 +206,7 @@
                     android:textSize="@dimen/text_M" />
 
                 <RadioButton
-                    android:id="@+id/qM8_4"
+                    android:id="@+id/rb_qM8_option_4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/margin_M"
@@ -253,7 +253,7 @@
                 android:textSize="@dimen/text_M" />
 
             <CheckBox
-                android:id="@+id/qM9_1"
+                android:id="@+id/cb_qM9_option_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/margin_M"
@@ -262,7 +262,7 @@
                 android:textSize="@dimen/text_M" />
 
             <CheckBox
-                android:id="@+id/qM9_2"
+                android:id="@+id/cb_qM9_option_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/margin_M"
@@ -271,7 +271,7 @@
                 android:textSize="@dimen/text_M" />
 
             <CheckBox
-                android:id="@+id/qM9_3"
+                android:id="@+id/cb_qM9_option_3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/margin_M"
@@ -280,7 +280,7 @@
                 android:textSize="@dimen/text_M" />
 
             <CheckBox
-                android:id="@+id/qM9_4"
+                android:id="@+id/cb_qM9_option_4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/margin_M"
@@ -289,7 +289,7 @@
                 android:textSize="@dimen/text_M" />
 
             <CheckBox
-                android:id="@+id/qM9_5"
+                android:id="@+id/cb_qM9_option_5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/margin_M"
@@ -326,12 +326,12 @@
                 android:textSize="@dimen/text_M" />
 
             <RadioGroup
-                android:id="@+id/question_M10"
+                android:id="@+id/rg_question_M10"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
                 <RadioButton
-                    android:id="@+id/qM10_1"
+                    android:id="@+id/rb_qM10_option_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/margin_M"
@@ -340,7 +340,7 @@
                     android:textSize="@dimen/text_M" />
 
                 <RadioButton
-                    android:id="@+id/qM10_2"
+                    android:id="@+id/rb_qM10_option_2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/margin_M"
@@ -358,7 +358,7 @@
 
 
             <Button
-                android:id="@+id/restart"
+                android:id="@+id/btn_restart"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/margin_XL"
@@ -370,7 +370,7 @@
                 android:textSize="@dimen/text_M" />
 
             <Button
-                android:id="@+id/submit"
+                android:id="@+id/btn_submit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/margin_XL"

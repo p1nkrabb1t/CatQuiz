@@ -76,7 +76,7 @@ public class MainActivityM2 extends AppCompatActivity {
      * This method shows the user how far into the quiz they are.
      */
     public void displayNumOfQuestions() {
-        TextView questionsDisplay = findViewById(R.id.questionsQty);
+        TextView questionsDisplay = findViewById(R.id.tv_questions_qty_message);
         questionsDisplay.setText(getString(R.string.questions6_10) + questions);
     }
 
@@ -84,7 +84,7 @@ public class MainActivityM2 extends AppCompatActivity {
      * This method changes the button text according to whether there are more questions or not.
      */
     public void chooseButton() {
-        Button buttonText = findViewById(R.id.submit);
+        Button buttonText = findViewById(R.id.btn_submit);
         if (questions == 10) {
             buttonText.setText(R.string.submit_button);
         } else {
@@ -107,25 +107,25 @@ public class MainActivityM2 extends AppCompatActivity {
      */
     public String onRadioButtonClickedM6() {
         String q6 = "";
-        RadioGroup questionM6 = findViewById(R.id.question_M6);
+        RadioGroup questionM6 = findViewById(R.id.rg_question_M6);
         int id = questionM6.getCheckedRadioButtonId();
         switch (id) {
-            case R.id.qM6_1:
+            case R.id.rb_qM6_option_1:
                 q6 = getString(R.string.incorrect);
                 scoreQuestion6 = 0;
                 answered6 = true;
                 break;
-            case R.id.qM6_2:
+            case R.id.rb_qM6_option_2:
                 scoreQuestion6 = levelPointsAwarded;
                 q6 = getString(R.string.correct);
                 answered6 = true;
                 break;
-            case R.id.qM6_3:
+            case R.id.rb_qM6_option_3:
                 q6 = getString(R.string.incorrect);
                 scoreQuestion6 = 0;
                 answered6 = true;
                 break;
-            case R.id.qM6_4:
+            case R.id.rb_qM6_option_4:
                 q6 = getString(R.string.incorrect);
                 scoreQuestion6 = 0;
                 answered6 = true;
@@ -139,7 +139,7 @@ public class MainActivityM2 extends AppCompatActivity {
      */
     public String checkEntryM7() {
         String q7 = "";
-        EditText question7 = findViewById(R.id.question_M7);
+        EditText question7 = findViewById(R.id.et_question_M7);
         if (question7.getText().toString().equals(null) || question7.getText().toString().equals("")) {
             q7 = "";
             answered7 = false;
@@ -168,25 +168,25 @@ public class MainActivityM2 extends AppCompatActivity {
      */
     public String onRadioButtonClickedM8() {
         String q8 = "";
-        RadioGroup questionM8 = findViewById(R.id.question_M8);
+        RadioGroup questionM8 = findViewById(R.id.rg_question_M8);
         int id = questionM8.getCheckedRadioButtonId();
         switch (id) {
-            case R.id.qM8_1:
+            case R.id.rb_qM8_option_1:
                 q8 = getString(R.string.incorrect);
                 scoreQuestion8 = 0;
                 answered8 = true;
                 break;
-            case R.id.qM8_2:
+            case R.id.rb_qM8_option_2:
                 q8 = getString(R.string.incorrect);
                 scoreQuestion8 = 0;
                 answered8 = true;
                 break;
-            case R.id.qM8_3:
+            case R.id.rb_qM8_option_3:
                 scoreQuestion8 = levelPointsAwarded;
                 q8 = getString(R.string.correct);
                 answered8 = true;
                 break;
-            case R.id.qM8_4:
+            case R.id.rb_qM8_option_4:
                 q8 = getString(R.string.incorrect);
                 scoreQuestion8 = 0;
                 answered8 = true;
@@ -201,11 +201,11 @@ public class MainActivityM2 extends AppCompatActivity {
      */
     private String getCheckedStateM9() {
         String q9 = "";
-        CheckBox q91 = findViewById(R.id.qM9_1);
-        CheckBox q92 = findViewById(R.id.qM9_2);
-        CheckBox q93 = findViewById(R.id.qM9_3);
-        CheckBox q94 = findViewById(R.id.qM9_4);
-        CheckBox q95 = findViewById(R.id.qM9_5);
+        CheckBox q91 = findViewById(R.id.cb_qM9_option_1);
+        CheckBox q92 = findViewById(R.id.cb_qM9_option_2);
+        CheckBox q93 = findViewById(R.id.cb_qM9_option_3);
+        CheckBox q94 = findViewById(R.id.cb_qM9_option_4);
+        CheckBox q95 = findViewById(R.id.cb_qM9_option_5);
         boolean ans_1 = q91.isChecked();
         boolean ans_2 = q92.isChecked();
         boolean ans_3 = q93.isChecked();
@@ -233,15 +233,15 @@ public class MainActivityM2 extends AppCompatActivity {
      */
     public String onRadioButtonClickedM10() {
         String q10 = "";
-        RadioGroup question10 = findViewById(R.id.question_M10);
+        RadioGroup question10 = findViewById(R.id.rg_question_M10);
         int id = question10.getCheckedRadioButtonId();
         switch (id) {
-            case R.id.qM10_1:
+            case R.id.rb_qM10_option_1:
                 scoreQuestion10 = levelPointsAwarded;
                 q10 = getString(R.string.correct);
                 answered10 = true;
                 break;
-            case R.id.qM10_2:
+            case R.id.rb_qM10_option_2:
                 q10 = getString(R.string.incorrect);
                 scoreQuestion10 = 0;
                 answered10 = true;
