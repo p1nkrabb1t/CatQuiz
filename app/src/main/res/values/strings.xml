@@ -3,7 +3,7 @@
     <string name="app_name">Cat Quiz</string>
     <string name="name">Name</string>
     <string name="select_all_checkboxes">(You must select all correct answers to win the point.)</string>
-    <string name="select_all_true_statements">Select all of the statements that are true..</string>
+    <string name="select_all_true_statements">Which of the following statements are true?</string>
     <string name="type_answer">(Type your answer into the text box)</string>
     <string name="a_true">True</string>
     <string name="a_false">False</string>

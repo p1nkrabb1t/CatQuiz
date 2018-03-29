@@ -47,14 +47,8 @@
                 android:text="@string/question_6" />
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/margin_S"
-                android:layout_marginTop="@dimen/margin_S"
-                android:text="@string/question_M6"
-                android:textAllCaps="false"
-                android:textColor="@color/black"
-                android:textSize="@dimen/text_M" />
+                style="@style/QuestionTextViewStyle"
+                android:text="@string/question_M6" />
 
             <RadioGroup
                 android:id="@+id/rg_question_M6"
@@ -112,14 +106,8 @@
                 android:text="@string/question_7" />
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/margin_S"
-                android:layout_marginTop="@dimen/margin_S"
-                android:text="@string/question_M7"
-                android:textAllCaps="false"
-                android:textColor="@color/black"
-                android:textSize="@dimen/text_M" />
+                style="@style/QuestionTextViewStyle"
+                android:text="@string/question_M7" />
 
             <EditText
                 android:id="@+id/et_question_M7"
@@ -149,14 +137,8 @@
                 android:text="@string/question_8" />
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/margin_S"
-                android:layout_marginTop="@dimen/margin_S"
-                android:text="@string/question_M8"
-                android:textAllCaps="false"
-                android:textColor="@color/black"
-                android:textSize="@dimen/text_M" />
+                style="@style/QuestionTextViewStyle"
+                android:text="@string/question_M8" />
 
             <RadioGroup
                 android:id="@+id/rg_question_M8"
@@ -215,14 +197,8 @@
                 android:text="@string/question_9" />
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/margin_S"
-                android:layout_marginTop="@dimen/margin_S"
-                android:text="@string/question_M9"
-                android:textAllCaps="false"
-                android:textColor="@color/black"
-                android:textSize="@dimen/text_M" />
+                style="@style/QuestionTextViewStyle"
+                android:text="@string/question_M9" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -271,14 +247,8 @@
                 android:text="@string/question_10" />
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/margin_S"
-                android:layout_marginTop="@dimen/margin_S"
-                android:text="@string/question_M10"
-                android:textAllCaps="false"
-                android:textColor="@color/black"
-                android:textSize="@dimen/text_M" />
+                style="@style/QuestionTextViewStyle"
+                android:text="@string/question_M10" />
 
             <RadioGroup
                 android:id="@+id/rg_question_M10"
