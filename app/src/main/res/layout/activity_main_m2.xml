@@ -234,48 +234,28 @@
 
             <CheckBox
                 android:id="@+id/cb_qM9_option_1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/margin_M"
-                android:paddingLeft="@dimen/padding_L"
-                android:text="@string/ansM9_1"
-                android:textSize="@dimen/text_M" />
+                style="@style/QuizCheckBoxStyle"
+                android:text="@string/ansM9_1" />
 
             <CheckBox
                 android:id="@+id/cb_qM9_option_2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/margin_M"
-                android:paddingLeft="@dimen/padding_L"
-                android:text="@string/ansM9_2"
-                android:textSize="@dimen/text_M" />
+                style="@style/QuizCheckBoxStyle"
+                android:text="@string/ansM9_2" />
 
             <CheckBox
                 android:id="@+id/cb_qM9_option_3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/margin_M"
-                android:paddingLeft="@dimen/padding_L"
-                android:text="@string/ansM9_3"
-                android:textSize="@dimen/text_M" />
+                style="@style/QuizCheckBoxStyle"
+                android:text="@string/ansM9_3" />
 
             <CheckBox
                 android:id="@+id/cb_qM9_option_4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/margin_M"
-                android:paddingLeft="@dimen/padding_L"
-                android:text="@string/ansM9_4"
-                android:textSize="@dimen/text_M" />
+                style="@style/QuizCheckBoxStyle"
+                android:text="@string/ansM9_4" />
 
             <CheckBox
                 android:id="@+id/cb_qM9_option_5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/margin_M"
-                android:paddingLeft="@dimen/padding_L"
-                android:text="@string/ansM9_5"
-                android:textSize="@dimen/text_M" />
+                style="@style/QuizCheckBoxStyle"
+                android:text="@string/ansM9_5" />
         </LinearLayout>
 
         <LinearLayout

@@ -64,57 +64,33 @@
 
             <CheckBox
                 android:id="@+id/cb_qH1_option_1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/margin_M"
-                android:paddingLeft="@dimen/padding_L"
-                android:text="@string/ansH1_1"
-                android:textSize="@dimen/text_M" />
+                style="@style/QuizCheckBoxStyle"
+                android:text="@string/ansH1_1" />
 
             <CheckBox
                 android:id="@+id/cb_qH1_option_2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/margin_M"
-                android:paddingLeft="@dimen/padding_L"
-                android:text="@string/ansH1_2"
-                android:textSize="@dimen/text_M" />
+                style="@style/QuizCheckBoxStyle"
+                android:text="@string/ansH1_2" />
 
             <CheckBox
                 android:id="@+id/cb_qH1_option_3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/margin_M"
-                android:paddingLeft="@dimen/padding_L"
-                android:text="@string/ansH1_3"
-                android:textSize="@dimen/text_M" />
+                style="@style/QuizCheckBoxStyle"
+                android:text="@string/ansH1_3" />
 
             <CheckBox
                 android:id="@+id/cb_qH1_option_4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/margin_M"
-                android:paddingLeft="@dimen/padding_L"
-                android:text="@string/ansH1_4"
-                android:textSize="@dimen/text_M" />
+                style="@style/QuizCheckBoxStyle"
+                android:text="@string/ansH1_4" />
 
             <CheckBox
                 android:id="@+id/cb_qH1_option_5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/margin_M"
-                android:paddingLeft="@dimen/padding_L"
-                android:text="@string/ansH1_5"
-                android:textSize="@dimen/text_M" />
+                style="@style/QuizCheckBoxStyle"
+                android:text="@string/ansH1_5" />
 
             <CheckBox
                 android:id="@+id/cb_qH1_option_6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/margin_M"
-                android:paddingLeft="@dimen/padding_L"
-                android:text="@string/ansH1_6"
-                android:textSize="@dimen/text_M" />
+                style="@style/QuizCheckBoxStyle"
+                android:text="@string/ansH1_6" />
 
         </LinearLayout>
 
